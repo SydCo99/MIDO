@@ -1,2 +1,2 @@
 # MIDO
-Mycosis Infectious Disease Ontology 
+Fungal Infectious Disease Ontology 
