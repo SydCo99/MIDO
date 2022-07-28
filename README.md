@@ -1,4 +1,5 @@
 # MIDO
 Fungal Infectious Disease Ontology 
 
-Contact Person: Sydney Cohen, sydneycohen99@gmail.com 
+###Contact Person
+Sydney Cohen, sydneycohen99@gmail.com 
