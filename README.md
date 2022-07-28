@@ -10,4 +10,6 @@ MIDO aims to bring fungal infectious diseases in conversation with other OBO Fou
 ## The UNITE Community Database 
 In light of ongoing discussions regarding terminology and taxonomy within the clinical microbiology community, MIDO uses the UNITE Community database to define different types of fungi, as this open-source database is operated by the mycology community, provides a novel taxon and species hypothesis approach combined with digitial object identifiers (DOIs), and synthesizes a number of different classification schemes. UNITE provides traceable communication of taxa and their properties so that new understandings can be easily communicated and integrated. More information on UNITE here: [The Taxon Hypothesis Paradigm—On the Unambiguous Detection and Communication of Taxa](https://doi.org/10.3390/microorganisms8121910)
 
-Contact Person: Sydney Cohen, sydneycohen99@gmail.com 
+
+## Contact 
+Sydney Cohen, sydneycohen99@gmail.com 
