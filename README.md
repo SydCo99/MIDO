@@ -4,7 +4,7 @@ MIDO: Mycosis (Fungal) Infectious Disease Ontology
 ## About
 MIDO is an open-source biomedical ontology. It is developed to provide standardized human- and computer-interpretable annotation and representation of various fungal infectious diseases. Its development follows the OBO Foundry Principles.
 
-MIDO aims to bring fungal infectious diseases in conversation with other OBO Foundry ontologies and extensions, including the Infectious Disease Ontology (IDO), the Coronavirus Infectious Disease Ontology (CIDO) and the Virus Infectious Disease Ontology (VIDO). Fungal pathogens are often opportunistic in nature, so creating clear relationships with other infectious disease ontologies is important in detecting and studying deadly secondary fungal infections and identifying people with weakened immune systems, either due to illness or treatment, that are at an increased risk for contracting fungal infections. 
+MIDO aims to bring fungal infectious diseases in conversation with other OBO Foundry ontologies and extensions, including the Infectious Disease Ontology (IDO), the Coronavirus Infectious Disease Ontology (CIDO) and the Virus Infectious Disease Ontology (VIDO). Fungal pathogens are often opportunistic in nature, so creating clear relationships with other infectious disease ontologies is important in detecting and studying deadly secondary fungal infections and in identifying people with weakened immune systems, either due to illness or treatment, that are at an increased risk of contracting fungal infections. 
 
 
 ## The UNITE Community Database 
