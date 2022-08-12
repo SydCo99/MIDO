@@ -1706,7 +1706,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
                     <rdf:Description rdf:about="http://www.co-ode.org/ontologies/MIDO_0000005"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO#OWLClass_b6c363f8_94a2_4052_9f94_636723cc9bc1"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO_0004011"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IDO_0000664"/>
@@ -1762,9 +1762,9 @@ Bumps on the skin are a common symptom. These bumps are usually small and painle
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_781c3097_4342_4694_97ff_a5413aa52d41 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004001 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_781c3097_4342_4694_97ff_a5413aa52d41">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128362"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNITE Community https://dx.doi.org/10.15156/BIO/SH1225764.08FU</obo:IAO_0000412>
         <rdfs:label xml:lang="en">sporothrix brasiliensis</rdfs:label>
@@ -1772,9 +1772,9 @@ Bumps on the skin are a common symptom. These bumps are usually small and painle
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_b6c363f8_94a2_4052_9f94_636723cc9bc1 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004011 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_b6c363f8_94a2_4052_9f94_636723cc9bc1">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004011">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1805,7 +1805,7 @@ Bumps on the skin are a common symptom. These bumps are usually small and painle
                                     <rdf:Description rdf:about="http://www.co-ode.org/ontologies/MIDO_0000067"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO#OWLClass_781c3097_4342_4694_97ff_a5413aa52d41"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO_0004001"/>
                                     </owl:Restriction>
                                 </owl:unionOf>
                             </owl:Class>
@@ -1876,7 +1876,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
     <!-- http://www.co-ode.org/ontologies/MIDO_0000064 -->
 
     <rdf:Description rdf:about="http://www.co-ode.org/ontologies/MIDO_0000064">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO#OWLClass_89b3c35b_f791_4adf_9677_521022e26aba"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0004002"/>
     </rdf:Description>
     
 
@@ -1922,7 +1922,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
     <!-- http://www.co-ode.org/ontologies/MIDO_0000083 -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0000083">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO#OWLClass_89b3c35b_f791_4adf_9677_521022e26aba"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0004002"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNITE Community https://dx.doi.org/10.15156/BIO/SH1192746.08FU</obo:IAO_0000412>
         <rdfs:label xml:lang="en">scedosporium prolificans</rdfs:label>
     </owl:Class>
@@ -2009,9 +2009,9 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_89b3c35b_f791_4adf_9677_521022e26aba -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004002 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_89b3c35b_f791_4adf_9677_521022e26aba">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004002">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000081"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNITE Community https://dx.doi.org/10.15156/BIO/TH032948</obo:IAO_0000412>
         <rdfs:label xml:lang="en">scedosporium</rdfs:label>
@@ -2368,7 +2368,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
                     <rdf:Description rdf:about="http://www.co-ode.org/ontologies/MIDO_0000005"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO#OWLClass_8bc34484_1f3a_4b39_af7f_3c096c41d004"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO_0004005"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IDO_0000664"/>
@@ -2514,9 +2514,9 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_8bc34484_1f3a_4b39_af7f_3c096c41d004 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004005 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_8bc34484_1f3a_4b39_af7f_3c096c41d004">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004005">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2537,9 +2537,9 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_d2977e7d_cab5_4edd_8a25_57c1f3979b36 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004006 -->
 
-    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_d2977e7d_cab5_4edd_8a25_57c1f3979b36">
+    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/MIDO_0004006">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2571,9 +2571,9 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_d925d97e_6c16_4f9c_9113_cbb4dc80a465 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004008 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_d925d97e_6c16_4f9c_9113_cbb4dc80a465">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004008">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -12968,7 +12968,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO#OWLClass_7d594867_deb8_4155_b08c_cede82e76658"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO_0004013"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -13078,7 +13078,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
                     <rdf:Description rdf:about="http://www.co-ode.org/ontologies/MIDO_0000005"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO#OWLClass_8bc34484_1f3a_4b39_af7f_3c096c41d004"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/MIDO_0004005"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IDO_0000664"/>
@@ -13652,9 +13652,9 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_23fbc0d1_3a3e_4e92_9959_8604c016b75a -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004012 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_23fbc0d1_3a3e_4e92_9959_8604c016b75a">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004012">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -13675,9 +13675,9 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_7d594867_deb8_4155_b08c_cede82e76658 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004013 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_7d594867_deb8_4155_b08c_cede82e76658">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004013">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -13700,9 +13700,9 @@ doi: 10.3904/kjim.2004.19.1.38</obo:IAO_0000119>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_8bc34484_1f3a_4b39_af7f_3c096c41d004 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004005 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_8bc34484_1f3a_4b39_af7f_3c096c41d004">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004005">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -13723,9 +13723,9 @@ doi: 10.3904/kjim.2004.19.1.38</obo:IAO_0000119>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_d2977e7d_cab5_4edd_8a25_57c1f3979b36 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004006 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_d2977e7d_cab5_4edd_8a25_57c1f3979b36">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004006">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -13785,9 +13785,9 @@ doi: 10.3904/kjim.2004.19.1.38</obo:IAO_0000119>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/MIDO#OWLClass_d925d97e_6c16_4f9c_9113_cbb4dc80a465 -->
+    <!-- http://www.co-ode.org/ontologies/MIDO_0004008 -->
 
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO#OWLClass_d925d97e_6c16_4f9c_9113_cbb4dc80a465">
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0004008">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
