@@ -1335,13 +1335,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     <!-- http://www.co-ode.org/ontologies/MIDO_0000112 -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0000112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000560"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.3390/genes9090461</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyenes are poly-unsaturated organic compounds that contain at least three alternating double and single carbon–carbon bonds. Their antimycotic action is mediated by direct binding to and removal of ergosterol present in the fungal cell membrane. This results in the loss of membrane permeability, subsequent membrane leakage, and eventually cell death .</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyenes are a group of antifungals that directly bind to and remove the ergosterol present in the fungal cell membrane. This results in the loss of membrane permeability, subsequent membrane leakage, and eventually cell death. Structurally, polyenes are characterized by the presense of poly-unsaturated organic compounds that contain at least three alternating double and single carbon–carbon bonds. </oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four models of the polyene mode of antifungal action have been proposed: the pore forming model, the surface adsorption model, the sterol sponge model and the oxidative damage model. More info: https://doi.org/10.3390/jof6040321</rdfs:comment>
         <rdfs:label xml:lang="en">polyene</rdfs:label>
     </owl:Class>
@@ -1355,7 +1356,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/0190-9622(90)70288-s</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.merckvetmanual.com/pharmacology/antifungal-agents/allylamines</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allylamines inhibit ergosterol synthesis at the level of squalene epoxidase. 
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allylamines are a group of antifungals that inhibit ergosterol synthesis at the level of squalene epoxidase. 
 Their mechanism is competitive inhibition of squalene epoxidase, blocking conversion of squalene to lanosterol, leading to squaline accumulation and ergosterol depletion in the cell membrane.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These agents are highly selective for the fungal enzyme and have a minimal effect on mammalian cholesterol synthesis.</rdfs:comment>
         <rdfs:label xml:lang="en">allylamines</rdfs:label>
@@ -1368,7 +1369,7 @@ Their mechanism is competitive inhibition of squalene epoxidase, blocking conver
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0000114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000560"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.3390/genes9090461</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azoles are heterocyclic compounds containing at least one nitrogen atom as part of the ring. These drugs act by targeting the cytochrome P450 enzyme-lanosterol 14α-demethylase, that converts lanosterol to ergosterol. Ergosterol is the main membrane sterol in most fungal species, holding an important role in controlling membrane fluidity. Effective azoles decrease membrane fluidity enough to inhibit cell growth.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azoles are group of antifungals that function by targeting the cytochrome P450 enzyme-lanosterol 14α-demethylase, that converts lanosterol to ergosterol. Ergosterol is the main membrane sterol in most fungal species, holding an important role in controlling membrane fluidity. Effective azoles decrease membrane fluidity enough to inhibit cell growth. Azoles are heterocyclic compounds containing at least one nitrogen atom as part of the ring. </oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excessive use of azoles for treatment and in agriculture is a contributor to increased antifungal resistance</rdfs:comment>
         <rdfs:label xml:lang="en">azole</rdfs:label>
     </owl:Class>
@@ -1380,7 +1381,7 @@ Their mechanism is competitive inhibition of squalene epoxidase, blocking conver
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000560"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.3390/genes9090461</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Echinocandins are amphiphilic lipopeptides, and products of cyclopentamine. Echinocandins inhibit the biosynthesis of an essential component of the fungal cell wall, the 1,3-ß-glucan.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Echinocandins are a group of antifungals that inhibit the biosynthesis of an essential component of the fungal cell wall, the 1,3-ß-glucan. Echinocandins are amphiphilic lipopeptides, and products of cyclopentamine. </oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">echinocandin</rdfs:label>
     </owl:Class>
     
@@ -1391,12 +1392,11 @@ Their mechanism is competitive inhibition of squalene epoxidase, blocking conver
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000560"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.3390/genes9090461</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrimidine analogs are nucleosides that mimic the structure of natural pyrimidines. The only pyrimidine analog with antimycotic properties currently in use for human treatment is flucytosine, which has the potential to convert into 5-fluorouracyl and further to 5-fluorodeoxyuridine inside the fungal cell. Subsequently, 5-fluorodeoxyuridine interferes with DNA, RNA, and protein
-synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by the action of the fungal enzyme cytosine deaminase (encoded by the yeast gene FCY1), which is not present in humans.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrimidine analogs are a group of antifungals that are nucleosides, that mimic the structure of natural pyrimidines. Some pyrimidine analogs have the potential to convert into 5-fluorouracyl and further to 5-fluorodeoxyuridine inside the fungal cell. Subsequently, 5-fluorodeoxyuridine interferes with DNA, RNA, and protein
+synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by the action of the fungal enzyme cytosine deaminase (encoded by the yeast gene FCY1), which is not present in humans. The only pyrimidine analog with antimycotic properties currently in use for human treatment is flucytosine. </oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Although it is one of the more effective and safest antimycotic in the health system, it is not used in monotherapy due to the rapid development of resistance towards this drug</rdfs:comment>
         <rdfs:label xml:lang="en">pyrimidine analog</rdfs:label>
     </owl:Class>
-
 
     <!-- http://purl.obolibrary.org/obo/DOID_4337 -->
 
