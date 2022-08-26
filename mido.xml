@@ -1418,7 +1418,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/DOID</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dermatophytosis that results_in contagious fungal infection located_in scalp, located_in hair of head, located_in eyebrow or located_in eyelash, has_material_basis_in Ascomycota fungi that belong to a group called dermatophytes and has_symptom itching of the scalp, has_symptom pus filled lesions on the scalp, and has_symptom patches of hair loss, sometimes with a &apos;black dot&apos; pattern.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease (specifically, dermatophytosis) that results_in contagious fungal infection located_in scalp, located_in hair of head, located_in eyebrow or located_in eyelash, has_material_basis_in Ascomycota fungi that belong to a group called dermatophytes and has_symptom itching of the scalp, has_symptom pus filled lesions on the scalp, and has_symptom patches of hair loss, sometimes with a &apos;black dot&apos; pattern.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatophytosis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tinea</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tinea capitis</oboInOwl:hasRelatedSynonym>
@@ -1455,7 +1455,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pneumonia resulting from infection with Pneumocystis jirovecii, frequently seen in the immunologically compromised, such as persons with AIDS, or steroid-treated individuals, the elderly, or premature or debilitated babies during their first three months. Patients may be only slightly febrile (or even afebrile), but are likely to be extremely weak, dyspneic, and cyanotic. This is a major cause of morbidity among patients with AIDS.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pneumocystis Pneumonia is a fungal infectious disease that appears as a pneumonia resulting from infection with Pneumocystis jirovecii, frequently seen in the immunologically compromised, such as persons with AIDS, or steroid-treated individuals, the elderly, or premature or debilitated babies during their first three months. Patients may be only slightly febrile (or even afebrile), but are likely to be extremely weak, dyspneic, and cyanotic. This is a major cause of morbidity among patients with AIDS.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">pneumocystis pneumonia</rdfs:label>
     </owl:Class>
     
@@ -1481,7 +1481,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A systemic fungal infection caused by Paracoccidioides brasiliensis that is most often seen in immunocompromised patients. It affects the mucous membranes, lymph nodes, lungs and bones. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that is caused by Paracoccidioides brasiliensis that is most often seen in immunocompromised patients. It is typically a systemic mycosis. It affects the mucous membranes, lymph nodes, lungs and bones. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">paracoccidioidomycosis</rdfs:label>
     </owl:Class>
     
@@ -1514,7 +1514,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK574511/</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a deep fungal infection of the skin and subcutaneous tissue caused by filamentous fungi. Characterized by deep granulomatous inflammation and the formation of grains which lead to the destruction of deep tissue, muscle, bone, joints, and tendons. The most common site of infection is the foot, followed by hands. Less frequently, other areas may be involved.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that is caused by filamentous fungi and effects the skin and subcutaneous tissue. Characterized by deep granulomatous inflammation and the formation of grains which lead to the destruction of deep tissue, muscle, bone, joints, and tendons. The most common site of infection is the foot, followed by hands. Less frequently, other areas may be involved.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eumycetoma is a mycetoma caused by fungi (eumycotic) rather than a mycetoma caused by bacteria (actinomycotic)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mycetoma is a WHO-recognized neglected tropical disease with a significant disease burden. It primarily affects those in tropical and subtropical climates who are in direct contact with soil.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-exhaustive list of fungi that may cause the infection and disease. for more information, see https://doi.org/10.1111/jdv.13008</rdfs:comment>
@@ -1635,7 +1635,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_826"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/sporotrichosis/index.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs when the infection spreads to another part of the body, such as bones, joints, or central nervous system. This form of sporotrichosis usually affects people with health problems or who take medicines that lower the body’s ability to fight germs and sickness, such as people living with HIV</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sporotrichosis that has spread to another part of the body, such as bones, joints, or central nervous system. This form of sporotrichosis usually affects people with health problems or who take medicines that lower the body’s ability to fight germs and sickness, such as people living with HIV</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">disseminated sporotrichosis</rdfs:label>
     </owl:Class>
     
@@ -1657,7 +1657,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_826"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs following inhalation of fungus and manifests as chronic pneumonitis while extracutaneous or systemic sporotrichosis (with osteoarticular, pulmonary, and central nervous system/meningeal disease), usually occurring in the setting of immunosuppression.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sporotrichosis that follows inhalation of fungus and manifests as chronic pneumonitis while extracutaneous or systemic sporotrichosis (with osteoarticular, pulmonary, and central nervous system/meningeal disease), usually occurring in the setting of immunosuppression.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adding specificity to orphanet parent term</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is rare but can happen after someone breathes in fungal spores from the environment.</rdfs:comment>
         <rdfs:label xml:lang="en">pulmonary sporotrichosis</rdfs:label>
@@ -1690,7 +1690,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_826"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/sporotrichosis/index.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs when the fungus enters the skin through a small cut or scrape, usually after someone touches contaminated plant matter. Skin on the hands or arms is most commonly affected.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sporotrichosisoccurs that most commonly affects the skin on the hands or arms. Can occur when the fungus enters the skin through a small cut or scrape, usually after someone touches contaminated plant matter. </oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">most common form of the infection. It usually occurs on a person’s hand or the arm after touching contaminated plant matter.</rdfs:comment>
         <rdfs:label xml:lang="en">cutaneous sporotrichosis</rdfs:label>
     </owl:Class>
@@ -1717,7 +1717,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Talaromycosis is an infection caused by the fungus Talaromyces marneffei.  Talaromycosis only affects people who live in or visit Southeast Asia, southern China, or eastern India. Most people who get talaromycosis have a medical condition that weakens their immune system, such as HIV/AIDS, or another condition that lowers the body’s ability to fight germs and sickness. 
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Talaromycosis is a fungal infectious disease that is caused by the fungus Talaromyces marneffei.  Talaromycosis only affects people who live in or visit Southeast Asia, southern China, or eastern India. Most people who get talaromycosis have a medical condition that weakens their immune system, such as HIV/AIDS, or another condition that lowers the body’s ability to fight germs and sickness. 
 Bumps on the skin are a common symptom. These bumps are usually small and painless. The bumps usually appear on the face and neck but can also appear in other places on the body.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">talaromycosis</rdfs:label>
     </owl:Class>
@@ -1828,7 +1828,7 @@ Bumps on the skin are a common symptom. These bumps are usually small and painle
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.orpha.net/ORDO/Orphanet</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sporotrichosis is an infection caused by the dimorphic fungus &lt;i&gt;Sporothrix schenckii&lt;/i&gt;, generally occurring by traumatic inoculation of fungus from contaminated soil, plants, and organic matter, that has a highly variable disease spectrum but that usually presents as a subcutaneous mycosis with a single sporotrichotic chancre that may ulcerate and can then progress to lymphocutaneous (most common form; sporotrichotic chancre at inoculation site and a string of similar nodules along the proximal lymphatics), fixed cutaneous (localized asymptomatic, erythematous, papules at the inoculation site), or multifocal or disseminated cutaneous (rare form, with 3 or more lesions involving 2 different anatomical sites) forms. 
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sporotrichosis is a fungal infectious disease that is caused by the dimorphic fungus Sporothrix schenckii, generally occurring by traumatic inoculation of fungus from contaminated soil, plants, and organic matter, that has a highly variable disease spectrum but that usually presents as a subcutaneous mycosis with a single sporotrichotic chancre that may ulcerate and can then progress to lymphocutaneous (most common form; sporotrichotic chancre at inoculation site and a string of similar nodules along the proximal lymphatics), fixed cutaneous (localized asymptomatic, erythematous, papules at the inoculation site), or multifocal or disseminated cutaneous (rare form, with 3 or more lesions involving 2 different anatomical sites) forms. 
 Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as chronic pneumonitis while extracutaneous or systemic sporotrichosis (with osteoarticular, pulmonary, and central nervous system/meningeal disease) has also been reported, usually occurring in the setting of immunosuppression.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rose gardener’s disease</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">can also be caused by sporothrix brasiliensis fungus</rdfs:comment>
@@ -1901,7 +1901,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heterogenous grouping of moulds (and a few yeasts) chracterized by the presence of melanin in their cell walls that can cause a wide range of diseases including phaeohyphomycosis, chromoblastomycosis, and eumycotic mycetoma. These organisms are widespread in the environment, being found in soil, wood, and decomposing plant debris. Cutaneous, subcutaneous, and corneal infections with dematiaceous fungi occur worldwide, but are more common in tropical and subtropical climates. Infection results from traumatic implantation. Most cases occur in immunocompetent individuals. Dematiaceous moulds are also important causes of invasive sinusitis and allergic fungal sinusitis. Infection is thought to follow inhalation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heterogenous grouping of fungus (mostly mold, a few yeasts) that is chracterized by the presence of melanin in their cell walls that can cause a wide range of diseases including phaeohyphomycosis, chromoblastomycosis, and eumycotic mycetoma. These organisms are widespread in the environment, being found in soil, wood, and decomposing plant debris. Cutaneous, subcutaneous, and corneal infections with dematiaceous fungi occur worldwide, but are more common in tropical and subtropical climates. Infection results from traumatic implantation. Most cases occur in immunocompetent individuals. Dematiaceous moulds are also important causes of invasive sinusitis and allergic fungal sinusitis. Infection is thought to follow inhalation.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dematiaceous fungi</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">more info: https://doi.org/10.1179/joc.2003.15.Supplement-2.36</rdfs:comment>
         <rdfs:label xml:lang="en">dematiaceous fungus</rdfs:label>
@@ -2061,7 +2061,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">World Health Organization: https://www.who.int/india/emergencies/coronavirus-disease-(covid-19)/mucormycosis</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mucormycosis (previously called zygomycosis) is a rare but serious angio-invasive infection caused by a group of fungi called mucormycetes. Clinical presentation is classified according to the organ involvement. It can be rhino-orbital cerebral, pulmonary, cutaneous, gastrointestinal, or disseminated.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mucormycosis is a fungal infectious disease that is caused by a group of fungi called mucormycetes(previously called zygomycosis). It is a rare but serious angio-invasive infection. Clinical presentation is classified according to the organ involvement. It can be rhino-orbital cerebral, pulmonary, cutaneous, gastrointestinal, or disseminated.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygomycosis (previous name)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">didn&apos;t import EFO:0007380, which also refers to mucormycosis, since that defintion mentions Zygomycota, a phylum of fungi that no longer exists</rdfs:comment>
         <rdfs:label xml:lang="en">mucormycosis</rdfs:label>
@@ -2154,7 +2154,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000040"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis in the sinuses that can spread to the brain. This is most common in people with uncontrolled diabetes and in people who have had a kidney transplant.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis that is in the sinuses and that can spread to the brain. This is most common in people with uncontrolled diabetes and in people who have had a kidney transplant.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinus and brain mucormycosis</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">rhinocerebral mucormycosis</rdfs:label>
     </owl:Class>
@@ -2177,7 +2177,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000040"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">most common type of mucormycosis in people with cancer and in people who have had an organ transplant or a stem cell transplant. Usually invasive and life-threatening</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis that primarily affects the pulmonary system. It is most common type of mucormycosis in people with cancer and in people who have had an organ transplant or a stem cell transplant. Usually invasive and life-threatening</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lung mucormycosis</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">there is no specific sign and symptoms, diagnostic criteria and specific antigen test for the diagnosis and management of PM. Any history of fever non-responding to antibiotics with pulmonary signs should also raise the suspicion of fungal infection like PM.
 More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
@@ -2203,7 +2203,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000040"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1155/2020/8876125</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rare but potentially lethal mucormycosis due to the invasion of Mucorales into the gastric mucosa. It may result in high mortality due to increased risk of complications in immunocompromised patients.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis that is characterized by the invasion of Mucorales into the gastric mucosa. It is rare but potentially lethal form of mucormycosis. It may result in high mortality due to increased risk of complications in immunocompromised patients.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">more common among young children than adults. Premature and low-birth-weight infants less than 1 month of age are at risk if they have had antibiotics, surgery, or medications that lower the body’s ability to fight germs and sickness.</rdfs:comment>
         <rdfs:label xml:lang="en">gastrointestinal mucormycosis</rdfs:label>
     </owl:Class>
@@ -2235,7 +2235,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000040"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1590/abd1806-4841.20176614</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an emerging fungal disease. It is usually acquired by direct inoculation through trauma. The clinical presentation is nonspecific, but an indurated plaque that rapidly evolves to necrosis is a common finding.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis that is cutaneous (affecting skin, hair, eyes, nails, or potentially deeper levels of epidermis). It is an emerging fungal disease. It is usually acquired by direct inoculation through trauma. The clinical presentation is nonspecific, but an indurated plaque that rapidly evolves to necrosis is a common finding.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">cutaneous mucormycosis</rdfs:label>
     </owl:Class>
     
@@ -2270,7 +2270,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000040"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs when infection spreads through the bloodstream to affect another part of the body. Disseminated mucormycosis most commonly affects the brain, but also can affect other organs such as the spleen, heart, and skin.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis that spreads through the bloodstream to affect another part of the body. Disseminated mucormycosis most commonly affects the brain, but also can affect other organs such as the spleen, heart, and skin.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">disseminated mucormycosis</rdfs:label>
     </owl:Class>
 
@@ -2303,7 +2303,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infection of the toenails or fingernails that tends to cause the nails to thicken, discolor, disfigure, and split. [ HPO : probinson ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that tends to cause finger-nails or toe-nails to thicken, discolor, disfigure, and split. [ HPO : probinson ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">onychomycosis</rdfs:label>
     </owl:Class>
     
@@ -2341,7 +2341,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/MONDO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infection by a variety of fungi, usually through four possible mechanisms: superficial infection producing conjunctivitis, keratitis, or lacrimal obstruction; extension of infection from neighboring structures - skin, paranasal sinuses, nasopharynx; direct introduction during surgery or accidental penetrating trauma; or via the blood or lymphatic routes in patients with underlying mycoses. [ MESH : D015821 ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that affects the eyes. It can be caused by a variety of fungi, usually through four possible mechanisms: superficial infection producing conjunctivitis, keratitis, or lacrimal obstruction; extension of infection from neighboring structures - skin, paranasal sinuses, nasopharynx; direct introduction during surgery or accidental penetrating trauma; or via the blood or lymphatic routes in patients with underlying mycoses. [ MESH : D015821 ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">fungal eye infection</rdfs:label>
     </owl:Class>
     
@@ -2353,7 +2353,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007229"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood borne fungal infection of the membranes surrounding the brain and spinal column (meninges) caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Cryptococcus that affects the membranes surrounding the brain and spinal column (meninges). It is a blood borne fungal infection caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">cryptococcal meningitis</rdfs:label>
     </owl:Class>
     
@@ -2379,7 +2379,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease caused by the fungus Histoplasma capsulatum. It primarily affects the lungs but can also occur as a disseminated disease that affects additional organs. The acute respiratory disease has symptoms similar to those of a cold or flu and it usually resolves without treatment in healthy individuals. The disseminated form is generally fatal if untreated. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that is caused by the fungus Histoplasma capsulatum. It primarily affects the lungs but can also occur as a disseminated disease that affects additional organs. The acute respiratory disease has symptoms similar to those of a cold or flu and it usually resolves without treatment in healthy individuals. The disseminated form is generally fatal if untreated. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More info: https://doi.org/10.1007/82_2018_114</rdfs:comment>
         <rdfs:label xml:lang="en">histoplasmosis</rdfs:label>
     </owl:Class>
@@ -2481,7 +2481,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease from C. gatti infection that may cause pulmonary cryptococcosis, basal meningitis and cerebral cryptococcomas. It is also associated with skin, soft tissue, lymph node, bone, and joint infections.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that can result from C. gatti infection, that may cause pulmonary cryptococcosis, basal meningitis and cerebral cryptococcomas. It is also associated with skin, soft tissue, lymph node, bone, and joint infections.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C. gatti cryptococcosis</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In humans, C. gattii causes predominantly meningoencephalitis and other CNS and pulmonary diseases and is associated with substantial morbidity. It also poses a concern for veterinarians, and some animal infections, in particular those in feline and canine companion animals and Australian native koalas, represent sentinels for human exposure.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">more info: https://doi.org/10.1128/CMR.00126-13</rdfs:comment>
@@ -2496,7 +2496,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_199323"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/fungal-eye-infections/definition.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs when a bloodstream infection (for example, candidemia) spreads to one or both eyes</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endophthalmitis that occurs when a bloodstream infection (for example, candidemia) spreads to one or both eyes</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">endogenous fungal endophthalmitis</rdfs:label>
     </owl:Class>
     
@@ -2508,7 +2508,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_199323"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/fungal-eye-infections/definition.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs after fungal spores enter the eye from an external source</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endophthalmitis that occurs after fungal spores enter the eye from an external source</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">exogenous fungal endophthalmitis</rdfs:label>
     </owl:Class>
     
@@ -2622,7 +2622,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An acute or chronic, localized or disseminated infection by Cryptococcus neoformans. Sites of involvement include the lungs, central nervous system and meninges, skin, and visceral organs.--2004 [ NCIT : P378 ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that is caused by the fungus Cryptococcus neoformansacute. Can be a chronic, localized or disseminated infection. Sites of involvement include the lungs, central nervous system and meninges, skin, and visceral organs.--2004 [ NCIT : P378 ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">cryptococcosis</rdfs:label>
     </owl:Class>
     
@@ -2633,7 +2633,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009449">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020944"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A corneal disease that is characterized by inflammation of the cornea. [ NCIT : C26805 ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal eye infection that is characterized by inflammation of the cornea. [ NCIT : C26805 ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">keratitis</rdfs:label>
     </owl:Class>
     
@@ -2644,7 +2644,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_199323">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020944"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.orpha.net/ORDO/Orphanet</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rare ophthalmic disorder characterized by inflammation involving the vitreous and/or aqueous humors, usually due to bacterial or fungal infection. It may arise endogenously from hematogenous spread of the infectious agent, or exogenously after direct inoculation, and can take an acute or chronic course. Clinical signs and symptoms include progressive vitritis, hypopyon, reduced or blurred vision, red eye, pain, and lid swelling. The condition may be complicated by panophthalmitis, corneal infiltration and perforation, affection of orbital structures, and phthisis bulbi.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal eye infection that is characterized by inflammation involving the vitreous and/or aqueous humors, usually due to bacterial or fungal infection. It is considered a rare ophthalmic disorder. It may arise endogenously from hematogenous spread of the infectious agent, or exogenously after direct inoculation, and can take an acute or chronic course. Clinical signs and symptoms include progressive vitritis, hypopyon, reduced or blurred vision, red eye, pain, and lid swelling. The condition may be complicated by panophthalmitis, corneal infiltration and perforation, affection of orbital structures, and phthisis bulbi.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">endophthalmitis</rdfs:label>
     </owl:Class>
 
