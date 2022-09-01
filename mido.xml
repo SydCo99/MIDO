@@ -13027,7 +13027,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An infection that is caused by Aspergillus. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that is caused by Aspergillus. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that occurs most often in the skin, ears, nasal sinuses, and lungs of people with suppressed immune systems.</rdfs:comment>
         <rdfs:label xml:lang="en">aspergillosis</rdfs:label>
     </owl:Class>
