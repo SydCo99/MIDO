@@ -12800,7 +12800,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001648">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000645"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/MONDO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esophagitis resulting from Candida. [ NCIT : P378 ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A candidiasis that results in esophagitis. [ NCIT : P378 ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">esophageal candidiasis</rdfs:label>
     </owl:Class>    
 
@@ -12908,8 +12908,9 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14286">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any of various single-celled ascomycetes, basidiomycetes and imperfect fungi with little or no mycelium development that asexually reproduce by budding. They ferment sugars to produce alcohol and carbon dioxide.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungus that is single celled and has little to no mycelium development. Any of various single-celled ascomycetes, basidiomycetes and imperfect fungi with little or no mycelium development that asexually reproduce by budding. They ferment sugars to produce alcohol and carbon dioxide.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alt defintion: Various single-celled members of the fungal families, ascomycetes, basidiomycetes and imperfect fungi that tend to be unicellular for the greater part of their life cycle. [ from On-line Medical Dictionary NCI ]</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-taxonomic grouping of fungi that are single-celled.</rdfs:comment>
         <rdfs:label xml:lang="en">yeast</rdfs:label>
     </owl:Class>
     
@@ -12931,7 +12932,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2886"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of aspergillosis characterized by the presence of septate, acute, branching hyphae invading lung tissue. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aspergillosis that is characterized by the presence of septate, acute, branching hyphae invading lung tissue. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when Aspergillus causes a serious infection, and usually affects people who have weakened immune systems, such as people who have had an organ transplant or a stem cell transplant. Invasive aspergillosis most commonly affects the lungs, but it can also spread to other parts of the body.</rdfs:comment>
         <rdfs:label xml:lang="en">invasive aspergillosis</rdfs:label>
     </owl:Class>
@@ -12944,7 +12945,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007229"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood borne fungal infection of the membranes surrounding the brain and spinal column (meninges) caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cryptococcosis that is characterized by a blood borne fungal infection of the membranes surrounding the brain and spinal column (meninges). Caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">cryptococcal meningitis</rdfs:label>
     </owl:Class>
     
@@ -12975,7 +12976,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2886"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spectrum of disorders associated with long-term Aspergillus infection of the lung that usually occur in immunocompetent individuals with underlying respiratory disorders, and may be characterized by pulmonary fibrosis or cavitation. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spectrum of disorders associated with long-term Aspergillosis of the lung that may be characterized by pulmonary fibrosis or cavitation. Usually occurs in immunocompetent individuals with underlying respiratory disorders. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when Aspergillus infection causes cavities in the lungs, and can be a long-term (3 months or more) condition. One or more fungal balls (aspergillomas) may also be present in the lungs</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic pulmonary aspergillosis</rdfs:label>
     </owl:Class>
@@ -12987,7 +12988,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C28266">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multicellular fungus that produces filaments and hyphae.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungus that is multicellular and produces filaments and hyphae.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-taxonomic grouping of fungi that grow in the form of mycelium of hyphae (vegetative filaments).</rdfs:comment>
         <rdfs:label xml:lang="en">mold</rdfs:label>
     </owl:Class>
@@ -13027,7 +13028,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An infection that is caused by Aspergillus. [ NCI ]</oboInOwl:hasDefinition>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An infectious fungal disease that occurs most often in the skin, ears, nasal sinuses, and lungs of people with suppressed immune systems.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that occurs most often in the skin, ears, nasal sinuses, and lungs of people with suppressed immune systems.</rdfs:comment>
         <rdfs:label xml:lang="en">aspergillosis</rdfs:label>
     </owl:Class>
     
@@ -13049,7 +13050,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000586"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An infection caused by a fungus. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An infection that is caused by a fungus. [ NCI ]</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungal infection</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">mycosis</rdfs:label>
     </owl:Class>
@@ -13061,7 +13062,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4985">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000645"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infection of the oropharynx with, or disease caused by, Candida, especially C. albicans. This disease usually results from debilitation (as in immunosuppression and especially AIDS), physiologic change, prolonged administration of antibiotics, and iatrogenic and barrier breakage. SYN candidosis, moniliasis. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A candidiasis that is chracterized by infection of the oropharynx. This disease usually results from debilitation (as in immunosuppression and especially AIDS), physiologic change, prolonged administration of antibiotics, and iatrogenic and barrier breakage. SYN candidosis, moniliasis. [ NCI ]</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thrush</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candida normally lives on the skin and inside the body, in places such as the mouth, throat, gut, and vagina, without causing any problems. Candida can multiply and cause an infection if the environment inside the mouth, throat, or esophagus changes in a way that encourages fungal growth.</rdfs:comment>
         <rdfs:label xml:lang="en">oropharyngeal candidiasis</rdfs:label>
@@ -13089,7 +13090,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease caused by the fungus Histoplasma capsulatum. It primarily affects the lungs but can also occur as a disseminated disease that affects additional organs. The acute respiratory disease has symptoms similar to those of a cold or flu and it usually resolves without treatment in healthy individuals. The disseminated form is generally fatal if untreated. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease caused by the fungus Histoplasma capsulatum. It primarily affects the lungs but can also occur as a disseminated disease that affects additional organs. The acute respiratory disease has symptoms similar to those of a cold or flu and it usually resolves without treatment in healthy individuals. The disseminated form is generally fatal if untreated. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More info: https://doi.org/10.1007/82_2018_114</rdfs:comment>
         <rdfs:label xml:lang="en">histoplasmosis</rdfs:label>
     </owl:Class>
@@ -13101,7 +13102,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C84547">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000008"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immune reaction to aspergillus in patients usually suffering from asthma or cystic fibrosis. [ NCI ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An allergic aspergillus that primarily affects patients suffering from asthma or cystic fibrosis. [ NCI ]</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when Aspergillus causes inflammation in the lungs and allergy symptoms such as coughing and wheezing, but doesn’t necessarily cause an infection</rdfs:comment>
         <rdfs:label xml:lang="en">allergic bronchopulmonary aspergillosis</rdfs:label>
     </owl:Class>
@@ -13328,7 +13329,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this term deviated from similarly labeled DOID:1564 in order to better fit the IDO structures of disease and infection</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease that has material basis in some mycosis, which pass the resistance barriers of the body.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An infectious disease that has material basis in some mycosis, which pass the resistance barriers of the body.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">fungal infectious disease</rdfs:label>
     </owl:Class>
     
@@ -13363,7 +13364,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2886"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.hopkinsmedicine.org/health/conditions-and-diseases/allergic-pulmonary-aspergillosis</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allergic pulmonary aspergillosis is an allergic reaction to a fungus called aspergillus, which may cause inflammation of the airways and air sacs of the lungs.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aspergillosis that is chracterized by an allergic reaction to a fungus called aspergillus, which may cause inflammation of the airways and air sacs of the lungs.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">allergic aspergillosis</rdfs:label>
     </owl:Class>
     
@@ -13374,7 +13375,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0000009">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000008"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An allergic reaction to Aspergillus that may cause inflammation in the sinuses and symptoms of a sinus infection (drainage, stuffiness, headache) but doesn’t necessarily cause an infection</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An allergic aspergillosis that may cause inflammation in the sinuses and symptoms of a sinus infection (drainage, stuffiness, headache) but doesn’t necessarily cause an infection</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">allergic aspergillus sinusitis</rdfs:label>
     </owl:Class>
     
@@ -13401,7 +13402,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2886"/>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aspergillosis infection wherein one species of Aspergillus, A. fumigatus, becomes resistant to certain medicines used to treat it. Patients with resistant infections might not get better with treatment</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aspergillosis infection that is caused by one species of Aspergillus, A. fumigatus, that becomes resistant to certain medicines used to treat it. Patients with resistant infections might not get better with treatment</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triazole antifungal drugs, commonly called azoles, are the primary treatment for aspergillosis. Azole-resistant A. fumigatus infections are difficult to treat, and these patients are up to 33% more likely to die than patients with infections that can be treated with azole (https://www.cdc.gov/fungal/diseases/aspergillosis/antifungal-resistant.html)</rdfs:comment>
         <rdfs:label xml:lang="en">azole-resistant aspergillus fumigatus</rdfs:label>
     </owl:Class>
@@ -13427,7 +13428,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
     <!-- http://www.co-ode.org/ontologies/MIDO_0000012 -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/MIDO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000581"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000445"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/antifungal-resistance.html</obo:IAO_0000119>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A resistance to antifungal drugs that mitigates the damaging effects of antifungal treatments.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when fungi develop the ability to defeat the drugs designed to kill them.  These antifungal resistant fungi no longer respond to antifungal drugs.</rdfs:comment>
@@ -13600,8 +13601,8 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease from C. gatti infection that may cause pulmonary cryptococcosis, basal meningitis and cerebral cryptococcomas. It is also associated with skin, soft tissue, lymph node, bone, and joint infections.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007229"/>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cryptococcosis that is caused by a C. gatti infection that may cause pulmonary cryptococcosis, basal meningitis and cerebral cryptococcomas. It is also associated with skin, soft tissue, lymph node, bone, and joint infections.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C. gatti cryptococcosis</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In humans, C. gattii causes predominantly meningoencephalitis and other CNS and pulmonary diseases and is associated with substantial morbidity. It also poses a concern for veterinarians, and some animal infections, in particular those in feline and canine companion animals and Australian native koalas, represent sentinels for human exposure.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">more info: https://doi.org/10.1128/CMR.00126-13</rdfs:comment>
@@ -13616,7 +13617,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_199323"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/fungal-eye-infections/definition.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs when a bloodstream infection (for example, candidemia) spreads to one or both eyes</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endophthalmitis that is caused by a bloodstream infection (for example, candidemia) spreads to one or both eyes</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">endogenous fungal endophthalmitis</rdfs:label>
     </owl:Class>
     
@@ -13628,7 +13629,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_199323"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/fungal-eye-infections/definition.html</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs after fungal spores enter the eye from an external source</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endophthalmitis that is caused by fungal spores entering the eye from an external source</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">exogenous fungal endophthalmitis</rdfs:label>
     </owl:Class>
     
@@ -13667,7 +13668,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000645"/>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A serious candida infection that can affect the blood, heart, brain, eyes, bones, and other parts of the body.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A serious form of candidiasis that can affect the blood, heart, brain, eyes, bones, and other parts of the body.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidemia</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidemia, a bloodstream infection with Candida, is a common infection in hospitalized patients.</rdfs:comment>
         <rdfs:label xml:lang="en">invasive candidiasis</rdfs:label>
@@ -13692,7 +13693,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2886"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4531547/
 doi: 10.3904/kjim.2004.19.1.38</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when a ball of Aspergillus grows in the lungs or sinuses, but usually does not spread to other parts of the body. Aspergilloma is also called a “fungus ball.”</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aspergillosis that involves a ball of Aspergillus growing in the lungs or sinuses, but it usually does not spread to other parts of the body. Aspergilloma is also called a “fungus ball.”</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulmonary aspergilloma</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">usually develops in the patients with underlying lung diseases</rdfs:comment>
         <rdfs:label xml:lang="en">aspergilloma</rdfs:label>
@@ -13779,7 +13780,7 @@ doi: 10.3904/kjim.2004.19.1.38</obo:IAO_0000119>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2886"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC105285/</obo:IAO_0000119>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when Aspergillus enters the body through a break in the skin (for example, after surgery or a burn wound) and causes infection, usually in people who have weakened immune systems. Cutaneous aspergillosis can also occur if invasive aspergillosis spreads to the skin from somewhere else in the body, such as the lungs</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aspergillosis that is caused by Aspergillus entering the body through a break in the skin (for example, after surgery or a burn wound) and causes infection, usually in people who have weakened immune systems. Cutaneous aspergillosis can also occur if invasive aspergillosis spreads to the skin from somewhere else in the body, such as the lungs</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">cutaneous aspergillosis</rdfs:label>
     </owl:Class>
     
@@ -13828,7 +13829,7 @@ doi: 10.3904/kjim.2004.19.1.38</obo:IAO_0000119>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blastomycosis is a rare infection that may develop when people inhale a fungus called Blastomyces dermatitidis, a fungus that is found in moist soil, particularly where there is rotting vegetation. The fungus enters the body through the lungs, infecting them. The fungus then spreads to other areas of the body.The infection may affect the skin, bones and joints, and other areas. The disease usually affects people with weakened immune systems, such as those with HIV or who have had an organ transplant. [https://rarediseases.info.nih.gov/diseases/5931/blastomycosis ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that is rare and may develop when people inhale a fungus called Blastomyces dermatitidis, a fungus that is found in moist soil, particularly where there is rotting vegetation. The fungus enters the body through the lungs, infecting them. The fungus then spreads to other areas of the body.The infection may affect the skin, bones and joints, and other areas. The disease usually affects people with weakened immune systems, such as those with HIV or who have had an organ transplant.[https://rarediseases.info.nih.gov/diseases/5931/blastomycosis ]</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Although blastomycosis is especially dangerous for those with weak immune systems, most people diagnosed with blastomycosis have healthy immune systems
 Source: doi:10.1016/j.ccm.2017.04.006</rdfs:comment>
         <rdfs:label xml:lang="en">blastomycosis</rdfs:label>
@@ -13856,7 +13857,7 @@ Source: doi:10.1016/j.ccm.2017.04.006</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infection caused by Coccidioides immitis. Affected individuals usually have mild flu-like symptoms. However, pneumonia and systemic involvement with the formation of abscesses may develop as complications of the disease. [ NCIT : P378 ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that is caused by Coccidioides immitis. Affected individuals usually have mild flu-like symptoms. However, pneumonia and systemic involvement with the formation of abscesses may develop as complications of the disease. [ NCIT : P378 ]</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">San Joaquin Valley fever</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valley fever</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">desert rheumatism</oboInOwl:hasRelatedSynonym>
@@ -13893,7 +13894,7 @@ Source: doi:10.1016/j.ccm.2017.04.006</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An acute or chronic, localized or disseminated infection by Cryptococcus neoformans. Sites of involvement include the lungs, central nervous system and meninges, skin, and visceral organs.--2004 [ NCIT : P378 ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal infectious disease that can be caused by Cryptococcus neoformans. It can present as an acute, chronic, localized or disseminated infection. Sites of involvement include the lungs, central nervous system and meninges, skin, and visceral organs.--2004 [ NCIT : P378 ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">cryptococcosis</rdfs:label>
     </owl:Class>
     
@@ -13926,7 +13927,7 @@ Source: doi:10.1016/j.ccm.2017.04.006</rdfs:comment>
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009449">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020944"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A corneal disease that is characterized by inflammation of the cornea. [ NCIT : C26805 ]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal eye infection is characterized by inflammation of the cornea. [ NCIT : C26805 ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">keratitis</rdfs:label>
     </owl:Class>
     
@@ -13993,7 +13994,7 @@ Source: doi:10.1016/j.ccm.2017.04.006</rdfs:comment>
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_199323">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020944"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.orpha.net/ORDO/Orphanet</obo:IAO_0000412>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rare ophthalmic disorder characterized by inflammation involving the vitreous and/or aqueous humors, usually due to bacterial or fungal infection. It may arise endogenously from hematogenous spread of the infectious agent, or exogenously after direct inoculation, and can take an acute or chronic course. Clinical signs and symptoms include progressive vitritis, hypopyon, reduced or blurred vision, red eye, pain, and lid swelling. The condition may be complicated by panophthalmitis, corneal infiltration and perforation, affection of orbital structures, and phthisis bulbi.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fungal (or bacterial) eye infection that is characterized by inflammation involving the vitreous and/or aqueous humors, usually due to bacterial or fungal infection. It may arise endogenously from hematogenous spread of the infectious agent, or exogenously after direct inoculation, and can take an acute or chronic course. Clinical signs and symptoms include progressive vitritis, hypopyon, reduced or blurred vision, red eye, pain, and lid swelling. The condition may be complicated by panophthalmitis, corneal infiltration and perforation, affection of orbital structures, and phthisis bulbi.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">endophthalmitis</rdfs:label>
     </owl:Class>
     
