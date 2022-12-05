@@ -17,7 +17,7 @@
         <dc:creator>Sydney Cohen</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment xml:lang="en">This is an extension of the Infectious Disease Ontology. MIDO's purpose is to provide standardized human- and computer-interpretable annotation and representation of various fungal infectious diseases. Its development follows the OBO Foundry Principles.</rdfs:comment>
-        <rdfs:seeAlso>http://www.infectiousdiseaseontology.org</rdfs:seeAlso>
+        <rdfs:seeAlso>https://github.com/SydCo99/MIDO.git</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-12-04</owl:versionInfo>
     </owl:Ontology>
 
