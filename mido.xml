@@ -13145,6 +13145,8 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/</rdfs:comment>
         <rdfs:label xml:lang="en">cryptococcus gattii cryptococcosis</rdfs:label>
     </owl:Class>
     
+Ram 
+     - Cryptococcosis gatti Cryptococcosis, which is a type under the class cryptocossis, is again included as a separate class. I believe this was a technical error during the data feeding process in the MIDO ontology. Cryptococcosis gatti Cryptococcosis which is included as a separate type should be removed.
 
 
     <!-- http://www.co-ode.org/ontologies/MIDO_0000032 -->
