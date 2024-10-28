@@ -115,8 +115,8 @@ We also have the outstanding issue of how to aim different definitions to differ
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition" ,
-                           "definition"@en ,
+                rdfs:label "definition"@en ,
+                           "definition" ,
                            "textual definition" .
 
 
@@ -982,8 +982,8 @@ obo:RO_0002234 rdf:type owl:ObjectProperty ;
 ###  http://purl.obolibrary.org/obo/RO_0002297
 obo:RO_0002297 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf obo:IDO_0000660 ;
-               obo:IAO_0000112 "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ,
-                               "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ;
+               obo:IAO_0000112 "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ,
+                               "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ;
                obo:IAO_0000114 obo:IAO_0000125 ;
                obo:IAO_0000117 "Chris Mungall" ;
                obo:IAO_0000119 "GOC:mtg_berkeley_2013" ;
@@ -1905,8 +1905,8 @@ obo:BFO_0000027 rdf:type owl:Class ;
                                 "the nitrogen atoms in the atmosphere"@en ,
                                 "the restaurants in Palo Alto"@en ,
                                 "your collection of Meissen ceramic plates."@en ;
-                obo:IAO_0000116 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " ,
-                                "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)."@en ;
+                obo:IAO_0000116 "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)."@en ,
+                                "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " ;
                 obo:IAO_0000119 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158." ;
                 obo:IAO_0000600 "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])"@en ;
                 obo:IAO_0000602 "(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] " ;
@@ -4100,8 +4100,8 @@ obo:IDO_0000406 rdf:type owl:Class ;
                                 "Alexander Diehl" ,
                                 "Lindsay Cowell" ;
                 obo:IAO_0000118 "opportunitistic pathogenic disposition"@en ;
-                rdfs:comment "The disposition is realized in a process by which the bearer becomes part of a disorder in an immunocompromised host." ,
-                             "This includes individuals who are immunocompromised or who have damaged barriers that normally protect against infection (e.g. skin)."@en ;
+                rdfs:comment "This includes individuals who are immunocompromised or who have damaged barriers that normally protect against infection (e.g. skin)."@en ,
+                             "The disposition is realized in a process by which the bearer becomes part of a disorder in an immunocompromised host." ;
                 rdfs:label "opportunistic infectious disposition"@en .
 
 
@@ -10126,6 +10126,31 @@ doi: 10.3904/kjim.2004.19.1.38""" ;
                                                 rdfs:label "aspergilloma"@en .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
+                                                        obo:IAO_0000115 "A fungal infectious disease that affects the outer layers of the skin, hair, or nails." ;
+                                                        rdfs:label "superficial fungal infectious disease" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000102
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101> ;
+                                                       rdfs:label "tinea infectious disease" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000103
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000103> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> ;
+                                                       rdfs:label "tinea capitis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000104
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000104> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> ;
+                                                       rdfs:label "tinea corporis" .
+
+
 ###  http://www.ebi.ac.uk/efo/EFO_0007174
 <http://www.ebi.ac.uk/efo/EFO_0007174> rdf:type owl:Class ;
                                        owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
@@ -10546,4 +10571,4 @@ obo:BFO_0000134 obo:IAO_0000600 "To say that each spatiotemporal region s tempor
 ] .
 
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
