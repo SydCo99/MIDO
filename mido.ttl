@@ -10109,15 +10109,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
 
 ###  http://www.co-ode.org/ontologies/MIDO_0004013
 <http://www.co-ode.org/ontologies/MIDO_0004013> rdf:type owl:Class ;
-                                                owl:equivalentClass [ rdf:type owl:Class ;
-                                                                      owl:unionOf ( <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty obo:RO_0000091 ;
-                                                                                      owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                    ]
-                                                                                  )
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C2886 ;
+                                                rdfs:subClassOf obo:IDO_0000504 ;
                                                 obo:IAO_0000119 """https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4531547/
 doi: 10.3904/kjim.2004.19.1.38""" ;
                                                 oboInOwl:hasDefinition "An aspergillosis that involves a ball of Aspergillus growing in the lungs or sinuses, but it usually does not spread to other parts of the body. Aspergilloma is also called a “fungus ball.”" ;
