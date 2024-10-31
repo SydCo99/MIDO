@@ -2522,19 +2522,6 @@ obo:CL_0000738 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/DOID_4337
 obo:DOID_4337 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:BFO_0000051 ;
-                                                           owl:someValuesFrom obo:NCBITaxon_4751
-                                                         ]
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:IDO_0000664 ;
-                                                           owl:someValuesFrom obo:MONDO_0000254
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
-              rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
               obo:IAO_0000412 "http://purl.obolibrary.org/obo/DOID" ;
               oboInOwl:hasDefinition "A fungal infectious disease (specifically, dermatophytosis) that results_in contagious fungal infection located_in scalp, located_in hair of head, located_in eyebrow or located_in eyelash, has_material_basis_in Ascomycota fungi that belong to a group called dermatophytes and has_symptom itching of the scalp, has_symptom pus filled lesions on the scalp, and has_symptom patches of hair loss, sometimes with a 'black dot' pattern." ;
               oboInOwl:hasRelatedSynonym "dermatophytosis" ,
@@ -2754,26 +2741,6 @@ obo:GO_0085031 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/HP_0012203
 obo:HP_0012203 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                          [ rdf:type owl:Class ;
-                                                            owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty obo:IDO_0000664 ;
-                                                                            owl:someValuesFrom obo:MONDO_0000254
-                                                                          ]
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty obo:IDO_0000664 ;
-                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                          ]
-                                                                        )
-                                                          ]
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty obo:BFO_0000051 ;
-                                                            owl:someValuesFrom obo:NCBITaxon_4751
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
                oboInOwl:hasDefinition "A fungal infectious disease that tends to cause finger-nails or toe-nails to thicken, discolor, disfigure, and split. [ HPO : probinson ]" ;
                rdfs:label "onychomycosis"@en .
 
@@ -8277,26 +8244,15 @@ obo:IDO_0000644 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/IDO_0000645
 obo:IDO_0000645 rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty obo:BFO_0000051 ;
-                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000018>
-                                                           ]
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty obo:IDO_0000664 ;
-                                                             owl:someValuesFrom obo:NCIT_C3245
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                obo:IAO_0000115 "An infection that has as part organisms of the Genus Candida."@en ;
+                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+                obo:IAO_0000115 "An opportunistic fungal infectious disease caused by yeasts from the genus Candida, most commonly Candida albicans."@en ;
                 obo:IAO_0000117 "Albert Goldfain" ,
                                 "Alexander Diehl" ,
-                                "Lindsay Cowell" ;
+                                "Lindsay Cowell" ,
+                                "Ram Challa" ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/IDO" ;
-                oboInOwl:hasDefinition "An infection that has as part organisms of the Genus Candida." ;
-                rdfs:comment "moved original placement of candidiasis in IDO to reflect that candidiasis is the disease, with an infection as its material basis" ;
+                rdfs:comment "Candidiasis can affect various parts of the body and presents in different forms, depending on the location and the individual's immune status." ,
+                             "moved original placement of candidiasis in IDO to reflect that candidiasis is the disease, with an infection as its material basis" ;
                 rdfs:label "candidiasis"@en .
 
 
@@ -8741,32 +8697,8 @@ obo:MONDO_0001648 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/MONDO_0020944
 obo:MONDO_0020944 rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                             [ rdf:type owl:Class ;
-                                                               owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:IDO_0000664 ;
-                                                                               owl:someValuesFrom obo:MONDO_0000254
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:IDO_0000664 ;
-                                                                               owl:someValuesFrom obo:MONDO_0000256
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:IDO_0000664 ;
-                                                                               owl:someValuesFrom obo:MONDO_0024268
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:IDO_0000664 ;
-                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                             ]
-                                                                           )
-                                                             ]
-                                                           ) ;
-                                        rdf:type owl:Class
-                                      ] ;
-                  rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                  obo:IAO_0000412 "http://purl.obolibrary.org/obo/MONDO" ;
-                  oboInOwl:hasDefinition "A fungal infectious disease that affects the eyes. It can be caused by a variety of fungi, usually through four possible mechanisms: superficial infection producing conjunctivitis, keratitis, or lacrimal obstruction; extension of infection from neighboring structures - skin, paranasal sinuses, nasopharynx; direct introduction during surgery or accidental penetrating trauma; or via the blood or lymphatic routes in patients with underlying mycoses. [ MESH : D015821 ]" ;
+                  rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+                  oboInOwl:hasDefinition "An opportunistic fungal infectious disease that affect the eyes, caused by species like Fusarium or Aspergillus." ;
                   rdfs:label "fungal eye infection"@en .
 
 
@@ -8870,8 +8802,7 @@ obo:NCIT_C162141 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/NCIT_C174113
 obo:NCIT_C174113 rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000031> ,
-                                 <http://www.ebi.ac.uk/efo/EFO_0007229> ;
+                 rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007229> ;
                  obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
                  oboInOwl:hasDefinition "A Cryptococcus that affects the membranes surrounding the brain and spinal column (meninges). It is a blood borne fungal infection caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]" ,
                                         "A cryptococcosis that is characterized by a blood borne fungal infection of the membranes surrounding the brain and spinal column (meninges). Caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]" ;
@@ -8898,8 +8829,8 @@ obo:NCIT_C186432 rdf:type owl:Class ;
                                      ] ;
                  rdfs:subClassOf obo:NCIT_C2886 ;
                  obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                 oboInOwl:hasDefinition "A spectrum of disorders associated with long-term Aspergillosis of the lung that may be characterized by pulmonary fibrosis or cavitation. Usually occurs in immunocompetent individuals with underlying respiratory disorders. [ NCI ]" ;
-                 rdfs:comment "Occurs when Aspergillus infection causes cavities in the lungs, and can be a long-term (3 months or more) condition. One or more fungal balls (aspergillomas) may also be present in the lungs" ;
+                 oboInOwl:hasDefinition "An aspergillosis resulting in a chronic infectious disease course affecting the lungs." ;
+                 rdfs:comment "Occurs when Aspergillus infection causes cavities in the lungs, and can be a long-term (3 months or more) condition. One or more fungal balls (aspergillomas) may also be present in the lungs.  It is characterized by the slow progression of lung damage over months to years and is associated with symptoms such as chronic cough, fatigue, weight loss, and shortness of breath." ;
                  rdfs:label "chronic pulmonary aspergillosis" .
 
 
@@ -8914,32 +8845,8 @@ obo:NCIT_C28266 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/NCIT_C2886
 obo:NCIT_C2886 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                          [ rdf:type owl:Class ;
-                                                            owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty obo:IDO_0000664 ;
-                                                                            owl:someValuesFrom obo:MONDO_0000254
-                                                                          ]
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty obo:IDO_0000664 ;
-                                                                            owl:someValuesFrom obo:MONDO_0000256
-                                                                          ]
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty obo:IDO_0000664 ;
-                                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                          ]
-                                                                        )
-                                                          ]
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty obo:BFO_0000051 ;
-                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000035>
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-               obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-               oboInOwl:hasDefinition "A fungal infectious disease that is caused by Aspergillus. [ NCI ]" ;
+               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+               oboInOwl:hasDefinition "An opportunistic fungal infectious disease caused by fungi of the Aspergillus species that affects the skin, ears, nasal sinuses, and lungs of people with suppressed immune systems." ;
                rdfs:comment "A fungal infectious disease that occurs most often in the skin, ears, nasal sinuses, and lungs of people with suppressed immune systems." ;
                rdfs:label "aspergillosis"@en .
 
@@ -8963,41 +8870,16 @@ obo:NCIT_C3245 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/NCIT_C3334
 obo:NCIT_C3334 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty obo:BFO_0000051 ;
-                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000066>
-                                                          ]
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty obo:IDO_0000664 ;
-                                                            owl:someValuesFrom obo:MONDO_0000256
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-               obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-               oboInOwl:hasDefinition "Pneumocystis Pneumonia is a fungal infectious disease that appears as a pneumonia resulting from infection with Pneumocystis jirovecii, frequently seen in the immunologically compromised, such as persons with AIDS, or steroid-treated individuals, the elderly, or premature or debilitated babies during their first three months. Patients may be only slightly febrile (or even afebrile), but are likely to be extremely weak, dyspneic, and cyanotic. This is a major cause of morbidity among patients with AIDS." ;
+               rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+               obo:IAO_0000115 "An opportunistic fungal infectious disease that is caused by the yeast-like fungus Pneumocystis jirovecii. It primarily affects individuals with weakened immune systems, such as those with HIV/AIDS, cancer, organ transplants, or other immunosuppressive conditions." ;
+               oboInOwl:hasRelatedSynonym "pneumocystis jirovecii pneumonia" ;
                rdfs:label "pneumocystis pneumonia"@en .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C34891
 obo:NCIT_C34891 rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty obo:BFO_0000051 ;
-                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000075>
-                                                           ]
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty obo:IDO_0000664 ;
-                                                             owl:someValuesFrom obo:MONDO_0000256
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                oboInOwl:hasDefinition "A fungal infectious disease that is caused by Paracoccidioides brasiliensis that is most often seen in immunocompromised patients. It is typically a systemic mycosis. It affects the mucous membranes, lymph nodes, lungs and bones. [ NCI ]" ;
+                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00112> ;
+                oboInOwl:hasDefinition "A primary (dimorphic) fungal infectious disease caused by Paracoccidioides brasiliensis. The infection typically enters the body through inhalation of fungal spores and primarily affects the lungs, but can spread to other organs." ;
                 rdfs:label "paracoccidioidomycosis"@en .
 
 
@@ -9013,21 +8895,8 @@ obo:NCIT_C4985 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/NCIT_C77201
 obo:NCIT_C77201 rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty obo:BFO_0000051 ;
-                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0004005>
-                                                           ]
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty obo:IDO_0000664 ;
-                                                             owl:someValuesFrom obo:MONDO_0000256
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                oboInOwl:hasDefinition "A fungal infectious disease that is caused by the fungus Histoplasma capsulatum. It primarily affects the lungs but can also occur as a disseminated disease that affects additional organs. The acute respiratory disease has symptoms similar to those of a cold or flu and it usually resolves without treatment in healthy individuals. The disseminated form is generally fatal if untreated. [ NCI ]" ;
+                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00112> ;
+                oboInOwl:hasDefinition "A primary (dimorphic) fungal infectious disease caused by the inhalation of spores of the fungus Histoplasma capsulatum, commonly found in soil enriched with bird or bat droppings. This infection primarily affects the lungs but can spread to other organs in severe cases or immunocompromised individuals." ;
                 rdfs:comment "More info: https://doi.org/10.1007/82_2018_114" ;
                 rdfs:label "histoplasmosis"@en .
 
@@ -9036,7 +8905,7 @@ obo:NCIT_C77201 rdf:type owl:Class ;
 obo:NCIT_C84547 rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000008> ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                oboInOwl:hasDefinition "An allergic aspergillus that primarily affects patients suffering from asthma or cystic fibrosis. [ NCI ]" ;
+                oboInOwl:hasDefinition "An allergic aspergillosis that primarily affects patients suffering from asthma or cystic fibrosis. [ NCI ]" ;
                 rdfs:comment "Occurs when Aspergillus causes inflammation in the lungs and allergy symptoms such as coughing and wheezing, but doesn’t necessarily cause an infection" ;
                 rdfs:label "allergic bronchopulmonary aspergillosis"@en .
 
@@ -9230,7 +9099,7 @@ obo:UBERON_0035944 rdf:type owl:Class ;
                                                 rdfs:subClassOf obo:NCIT_C2886 ;
                                                 obo:IAO_0000117 "Sydney Cohen" ;
                                                 obo:IAO_0000119 "https://www.hopkinsmedicine.org/health/conditions-and-diseases/allergic-pulmonary-aspergillosis" ;
-                                                oboInOwl:hasDefinition "An aspergillosis that is chracterized by an allergic reaction to a fungus called aspergillus, which may cause inflammation of the airways and air sacs of the lungs." ;
+                                                oboInOwl:hasDefinition "An aspergillosis that is characterized by an allergic reaction to a fungus called aspergillus, which may cause inflammation of the airways and air sacs of the lungs." ;
                                                 rdfs:label "allergic aspergillosis"@en .
 
 
@@ -9380,27 +9249,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/""" ;
 
 ###  http://www.co-ode.org/ontologies/MIDO_0000031
 <http://www.co-ode.org/ontologies/MIDO_0000031> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                           [ rdf:type owl:Class ;
-                                                                                             owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty obo:IDO_0000664 ;
-                                                                                                             owl:someValuesFrom obo:MONDO_0000254
-                                                                                                           ]
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty obo:IDO_0000664 ;
-                                                                                                             owl:someValuesFrom obo:MONDO_0000256
-                                                                                                           ]
-                                                                                                         )
-                                                                                           ]
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty obo:BFO_0000051 ;
-                                                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000029>
-                                                                                           ]
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ,
-                                                                <http://www.ebi.ac.uk/efo/EFO_0007229> ;
+                                                rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007229> ;
                                                 oboInOwl:hasDefinition "A cryptococcosis that is caused by a C. gatti infection that may cause pulmonary cryptococcosis, basal meningitis and cerebral cryptococcomas. It is also associated with skin, soft tissue, lymph node, bone, and joint infections." ,
                                                                        "A fungal infectious disease that can result from C. gatti infection, that may cause pulmonary cryptococcosis, basal meningitis and cerebral cryptococcomas. It is also associated with skin, soft tissue, lymph node, bone, and joint infections." ;
                                                 oboInOwl:hasExactSynonym "C. gatti cryptococcosis" ;
@@ -9443,43 +9292,9 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/""" ;
 
 ###  http://www.co-ode.org/ontologies/MIDO_0000040
 <http://www.co-ode.org/ontologies/MIDO_0000040> rdf:type owl:Class ;
-                                                owl:equivalentClass [ rdf:type owl:Class ;
-                                                                      owl:unionOf ( [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                                           [ rdf:type owl:Class ;
-                                                                                                             owl:unionOf ( <http://www.co-ode.org/ontologies/MIDO_0000041>
-                                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000042>
-                                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000045>
-                                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000046>
-                                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000047>
-                                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                                             owl:onProperty obo:BFO_0000051 ;
-                                                                                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000044>
-                                                                                                                           ]
-                                                                                                                         )
-                                                                                                           ]
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty obo:IDO_0000664 ;
-                                                                                                             owl:someValuesFrom obo:MONDO_0000254
-                                                                                                           ]
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty obo:IDO_0000664 ;
-                                                                                      owl:someValuesFrom obo:MONDO_0000256
-                                                                                    ]
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty obo:IDO_0000664 ;
-                                                                                      owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                                    ]
-                                                                                  )
-                                                                    ] ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                obo:IAO_0000119 "World Health Organization: https://www.who.int/india/emergencies/coronavirus-disease-(covid-19)/mucormycosis" ;
-                                                oboInOwl:hasDefinition "Mucormycosis is a fungal infectious disease that is caused by a group of fungi called mucormycetes(previously called zygomycosis). It is a rare but serious angio-invasive infection. Clinical presentation is classified according to the organ involvement. It can be rhino-orbital cerebral, pulmonary, cutaneous, gastrointestinal, or disseminated." ;
-                                                oboInOwl:hasRelatedSynonym "zygomycosis (previous name)" ;
-                                                rdfs:comment "didn't import EFO:0007380, which also refers to mucormycosis, since that defintion mentions Zygomycota, a phylum of fungi that no longer exists" ;
+                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+                                                oboInOwl:hasDefinition "An opportunistic fungal infectious disease caused by fungi in the order Mucorales, which include species like Rhizopus, Mucor, Rhizomucor, and Lichtheimia." ;
+                                                rdfs:comment "Mucormycosis occurs primarily in immunocompromised individuals, such as those with uncontrolled diabetes, organ transplants, cancer, or those receiving immunosuppressive therapies." ;
                                                 rdfs:label "mucormycosis"@en .
 
 
@@ -9639,27 +9454,8 @@ More info: doi: 10.21037/jtd.2017.02.31""" ;
 
 ###  http://www.co-ode.org/ontologies/MIDO_0000061
 <http://www.co-ode.org/ontologies/MIDO_0000061> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                           [ rdf:type owl:Class ;
-                                                                                             owl:unionOf ( obo:MONDO_0000254
-                                                                                                           obo:MONDO_0000256
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty obo:IDO_0000664 ;
-                                                                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                                                           ]
-                                                                                                         )
-                                                                                           ]
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty obo:BFO_0000051 ;
-                                                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000081>
-                                                                                           ]
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                obo:IAO_0000119 "https://www.ncbi.nlm.nih.gov/books/NBK574511/" ;
-                                                oboInOwl:hasDefinition "A fungal infectious disease that is caused by filamentous fungi and effects the skin and subcutaneous tissue. Characterized by deep granulomatous inflammation and the formation of grains which lead to the destruction of deep tissue, muscle, bone, joints, and tendons. The most common site of infection is the foot, followed by hands. Less frequently, other areas may be involved." ;
+                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000108> ;
+                                                obo:IAO_0000115 "A subcutaneous fungal infectious disease that affects tissues in and beneath the skin, often extending to bones." ;
                                                 oboInOwl:hasExactSynonym "eumycotic mycetoma" ;
                                                 rdfs:comment "Eumycetoma is a mycetoma caused by fungi (eumycotic) rather than a mycetoma caused by bacteria (actinomycotic)" ,
                                                              "Mycetoma is a WHO-recognized neglected tropical disease with a significant disease burden. It primarily affects those in tropical and subtropical climates who are in direct contact with soil." ,
@@ -9792,29 +9588,16 @@ More info: doi: 10.21037/jtd.2017.02.31""" ;
                                                 rdfs:subClassOf <http://www.orpha.net/ORDO/Orphanet_826> ;
                                                 obo:IAO_0000117 "Sydney Cohen" ;
                                                 obo:IAO_0000119 "https://www.cdc.gov/fungal/diseases/sporotrichosis/index.html" ;
-                                                oboInOwl:hasDefinition "A sporotrichosisoccurs that most commonly affects the skin on the hands or arms. Can occur when the fungus enters the skin through a small cut or scrape, usually after someone touches contaminated plant matter. " ;
+                                                oboInOwl:hasDefinition "A sporotrichosis that most commonly affects the skin on the hands or arms. Can occur when the fungus enters the skin through a small cut or scrape, usually after someone touches contaminated plant matter." ;
                                                 rdfs:comment "most common form of the infection. It usually occurs on a person’s hand or the arm after touching contaminated plant matter." ;
                                                 rdfs:label "cutaneous sporotrichosis"@en .
 
 
 ###  http://www.co-ode.org/ontologies/MIDO_0000074
 <http://www.co-ode.org/ontologies/MIDO_0000074> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty obo:BFO_0000051 ;
-                                                                                             owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0004011>
-                                                                                           ]
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty obo:IDO_0000664 ;
-                                                                                             owl:someValuesFrom obo:MONDO_0000256
-                                                                                           ]
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                oboInOwl:hasDefinition """Talaromycosis is a fungal infectious disease that is caused by the fungus Talaromyces marneffei.  Talaromycosis only affects people who live in or visit Southeast Asia, southern China, or eastern India. Most people who get talaromycosis have a medical condition that weakens their immune system, such as HIV/AIDS, or another condition that lowers the body’s ability to fight germs and sickness. 
-Bumps on the skin are a common symptom. These bumps are usually small and painless. The bumps usually appear on the face and neck but can also appear in other places on the body.""" ;
+                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00112> ;
+                                                oboInOwl:hasDefinition "A primary (dimorphic) fungal infectious disease, also known as Penicilliosis, is a fungal infectious disease caused by Talaromyces marneffei, a dimorphic fungus." ;
+                                                rdfs:comment "It only affects people who live in or visit Southeast Asia, southern China, or eastern India. Most people who get talaromycosis have a medical condition that weakens their immune system, such as HIV/AIDS, or another condition that lowers the body’s ability to fight germs and sickness. Bumps on the skin are a common symptom. These bumps are usually small and painless. The bumps usually appear on the face and neck but can also appear in other places on the body." ;
                                                 rdfs:label "talaromycosis"@en .
 
 
@@ -10101,7 +9884,7 @@ synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by
                                                                       rdf:type owl:Class
                                                                     ] ;
                                                 rdfs:subClassOf obo:IDO_0000645 ;
-                                                oboInOwl:hasDefinition "A serious form of candidiasis that can affect the blood, heart, brain, eyes, bones, and other parts of the body." ;
+                                                oboInOwl:hasDefinition "A candidiasis that can affect the blood, heart, brain, eyes, bones, and other parts of the body." ;
                                                 oboInOwl:hasRelatedSynonym "Candidemia" ;
                                                 rdfs:comment "Candidemia, a bloodstream infection with Candida, is a common infection in hospitalized patients." ;
                                                 rdfs:label "invasive candidiasis"@en .
@@ -10118,6 +9901,22 @@ doi: 10.3904/kjim.2004.19.1.38""" ;
                                                 rdfs:label "aspergilloma"@en .
 
 
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO-00113
+<http://www.co-ode.org/ontologies/ont.owl#MIDO-00113> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007174> ;
+                                                      obo:IAO_0000115 "A blastomycosis primarily affecting the lungs and is caused by Blastomyces dermatitidis fungus." ;
+                                                      rdfs:comment "The infection occurs when an individual inhales spores of Blastomyces, typically found in soil, decaying vegetation, and other organic matter." ;
+                                                      rdfs:label "pulmonary blastomycosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO-00114
+<http://www.co-ode.org/ontologies/ont.owl#MIDO-00114> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007174> ;
+                                                      obo:IAO_0000115 "A blastomycosis that is caused by Blastomyces dermatitidis, primarily affecting the skin." ;
+                                                      rdfs:comment "This form of blastomycosis usually occurs as a result of the fungus spreading from the lungs to the skin." ;
+                                                      rdfs:label "cutaneous blastomytcosis" .
+
+
 ###  http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101
 <http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101> rdf:type owl:Class ;
                                                         rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
@@ -10128,38 +9927,188 @@ doi: 10.3904/kjim.2004.19.1.38""" ;
 ###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000102
 <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> rdf:type owl:Class ;
                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101> ;
+                                                       obo:IAO_0000115 "A superficial fungal infectious disease that affects keratinized tissues such as the outer layers of the skin, hair, or nails. It is often referred to as \"ringworm\" due to its ring-like appearance." ;
                                                        rdfs:label "tinea infectious disease" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000103
 <http://www.co-ode.org/ontologies/ont.owl#MIDO_000103> rdf:type owl:Class ;
                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> ;
+                                                       obo:IAO_0000115 "A tinea infectious disease that primarily affects the scalp and hair follicles." ;
                                                        rdfs:label "tinea capitis" .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000104
 <http://www.co-ode.org/ontologies/ont.owl#MIDO_000104> rdf:type owl:Class ;
                                                        rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> ;
+                                                       obo:IAO_0000115 "A tinea infectious disease that affects the skin on areas of the body other than the scalp, hands, feet, or groin." ;
                                                        rdfs:label "tinea corporis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000105
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000105> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> ;
+                                                       obo:IAO_0000115 "A tinea infectious disease that affects the groin area. It is commonly known as \"jock itch.\"" ;
+                                                       rdfs:label "tinea cruris" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000106
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000106> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> ;
+                                                       obo:IAO_0000115 "A tinea infectious disease that affects the feet. It is also known as \"athlete's foot\"." ;
+                                                       rdfs:label "tinea pedis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000107
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000107> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000102> ;
+                                                       obo:IAO_0000115 "A tinea infectious disease that affects the nails." ;
+                                                       rdfs:label "tinea unguium" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000108
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000108> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
+                                                       obo:IAO_0000115 "A fungal infectious disease that generally affects tissues in and beneath the skin." ;
+                                                       rdfs:label "subcutaneous fungal infectious disease" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000109
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000109> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
+                                                       obo:IAO_0000115 "A fungal infectious disease that affects multiple organs or tissues in the body due to the spread of the infectious agent in blood." ;
+                                                       rdfs:label "systemic fungal infectious disease" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_000116
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_000116> rdf:type owl:Class ;
+                                                       rdfs:subClassOf obo:IDO_0000645 ;
+                                                       obo:IAO_0000115 "A candidiasis that is caused by an immune system defect that leads to an impaired response to Candida species, especially Candida albicans." ;
+                                                       rdfs:comment "It is a rare, persistent fungal infection. It primarily affects the skin, nails, and mucous membranes, such as the mouth and genital areas, causing recurrent or chronic infections." ;
+                                                       rdfs:label "chronic mucocutaneous candidiasis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00110
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00110> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000108> ;
+                                                      obo:IAO_0000115 "A subcutaneous fungal infectionus disease that affects the skin and subcutaneous tissues." ;
+                                                      rdfs:label "chromoblastomycosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00111
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000109> ;
+                                                      obo:IAO_0000115 "A systemic fungal infectious disease that occurs in individuals with weakened or compromised immune systems." ;
+                                                      rdfs:label "opportunistic fungal infectious disease" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00112
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00112> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_000109> ;
+                                                      obo:IAO_0000115 "A systemic fungal infectious disease caused by dimorphic fungi that have the ability to exist in two different forms depending on environmental conditions." ;
+                                                      rdfs:comment "These fungi typically exist in a mold form in the environment and switch to a yeast or yeast-like form when they enter the human body, which allows them to invade and infect tissues, even in healthy individuals with no immunocompromised state" ;
+                                                      rdfs:label "primary (dimorphic) fungal infectious disease" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00115
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00115> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IDO_0000645 ;
+                                                      obo:IAO_0000115 "A candidiasis that is caused by the Candida species through blood stream, most commonly Candida albicans." ;
+                                                      rdfs:comment "Although other species like Candida glabrata and Candida auris can also be involved.  It can occur as a result of catheter use, abdominal surgery, antibiotic therapy, or from an overgrowth of Candida in the gut that translocates to the bloodstream. This condition can lead to serious complications as the fungus can spread to various organs such as the heart, brain, eyes, bones, and kidneys, causing severe infections." ;
+                                                      rdfs:label "candidemia" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00117
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00117> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IDO_0000645 ;
+                                                      obo:IAO_0000115 "A candidiasis that is caused by the yeast Candida auris." ;
+                                                      rdfs:comment "This is a serious, emerging fungal infection and also concerning because it is often resistant to multiple antifungal drugs, making it difficult to treat." ;
+                                                      rdfs:label "candida auris infection" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00118
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00118> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007211> ;
+                                                      obo:IAO_0000115 "A coccidioidomycosis that occurs when the Coccidioides fungi are inhaled into the lungs." ;
+                                                      rdfs:comment "This condition is caused by exposure to airborne fungal spores from Coccidioides immitis or Coccidioides posadasii." ;
+                                                      rdfs:label "primary pulmonary coccidioidomycosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00119
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00119> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007211> ;
+                                                      obo:IAO_0000115 "A coccidioidomycosis that occurs when the Coccidioides fungi, which initially infect the lungs, spread through the bloodstream to other parts of the body." ;
+                                                      oboInOwl:hasRelatedSynonym "Valley fever" ;
+                                                      rdfs:label "disseminated coccidioidomycosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00120
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00120> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007229> ;
+                                                      obo:IAO_0000115 "A cryptococcosis fungal infection caused by Cryptococcus neoformans, primarily affecting individuals with weakened immune systems, such as those with HIV/AIDS or undergoing immunosuppressive therapies." ;
+                                                      rdfs:comment "The infection typically starts in the lungs after inhaling fungal spores, but it can spread to the brain, leading to a severe form of meningitis called cryptococcal meningitis." ;
+                                                      rdfs:label "cryptococcus neoformans cryptococcosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00121
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00121> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0007229> ;
+                                                      obo:IAO_0000115 "A cryptococcosis fungal infection of the lungs caused by Cryptococcus species, primarily Cryptococcus neoformans and Cryptococcus gattii." ;
+                                                      rdfs:comment "This infection typically occurs when fungal spores are inhaled, leading to infection in the lungs." ;
+                                                      rdfs:label "pulmonary cryptococcosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00122
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00122> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:MONDO_0020944 ;
+                                                      obo:IAO_0000115 "A fungal eye infection that affects the cornea, the transparent, front part of the eye." ;
+                                                      rdfs:comment "This condition leads to corneal ulcers, inflammation, pain, redness, blurred vision, and in severe cases, can result in corneal scarring or blindness if not treated effectively." ;
+                                                      rdfs:label "fungal keratitis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00123
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00123> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:MONDO_0020944 ;
+                                                      obo:IAO_0000115 "A fungal eye infection that affects the conjunctiva, the thin, transparent layer covering the white part of the eye and the inside of the eyelids." ,
+                                                                      "It is caused by fungi, such as Candida, Aspergillus, or Fusarium species, typically following contact with contaminated substances or following an eye injury. The infection results in symptoms such as redness, eye discharge, discomfort," ;
+                                                      rdfs:label "fungal conjuctivitis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00124
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00124> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:NCIT_C77201 ;
+                                                      obo:IAO_0000115 "A histoplasmosis that primarily affects the lungs and occurs when Histoplasma capsulatum spores are inhaled, leading to a long-term lung infection. This form of histoplasmosis is most commonly seen in individuals with pre-existing lung conditions." ;
+                                                      rdfs:label "chronic pulmonary histoplasmosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00125
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00125> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:NCIT_C77201 ;
+                                                      obo:IAO_0000115 "A histoplasmosis that occurs when Histoplasma capsulatum, a fungus commonly found in soil, spreads from the lungs to other organs via the bloodstream." ;
+                                                      rdfs:comment "This form of histoplasmosis can affect multiple organ systems, including the liver, spleen, lymph nodes, bone marrow, skin, and central nervous system." ;
+                                                      rdfs:label "disseminated histoplasmosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00126
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00126> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:NCIT_C34891 ;
+                                                      obo:IAO_0000115 "A paracoccidioidomycosis that primarily affects the lungs and typically adults, but it can also spread to other parts of the body like the skin, lymph nodes, and mucous membranes." ;
+                                                      rdfs:comment "It affects particularly men involved in rural or agricultural work in endemic areas such as Brazil and other parts of South America. It is a progressive, systemic fungal infection caused by Paracoccidioides species (P. brasiliensis and P. lutzii)." ;
+                                                      rdfs:label "chronic paracoccidioidomycosis" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MIDO_00127
+<http://www.co-ode.org/ontologies/ont.owl#MIDO_00127> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:NCIT_C34891 ;
+                                                      obo:IAO_0000115 "A paracoccidioidomycosis that is caused by Paracoccidioides species. It progresses much faster than the chronic form, with symptoms developing over weeks to months." ;
+                                                      rdfs:comment "Unlike the chronic form, which mainly affects adults, this form often occurs in younger individuals, including children and adolescents. It is characterized by a more rapid onset and affects more organs and systems in the body." ;
+                                                      rdfs:label "acute/subacute paracoccidioidomycosis" .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0007174
 <http://www.ebi.ac.uk/efo/EFO_0007174> rdf:type owl:Class ;
-                                       owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty obo:BFO_0000051 ;
-                                                                                    owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000014>
-                                                                                  ]
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty obo:IDO_0000664 ;
-                                                                                    owl:someValuesFrom obo:MONDO_0000256
-                                                                                  ]
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ] ;
-                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                                       obo:IAO_0000412 "http://www.ebi.ac.uk/efo/EFO" ;
-                                       oboInOwl:hasDefinition "A fungal infectious disease that is rare and may develop when people inhale a fungus called Blastomyces dermatitidis, a fungus that is found in moist soil, particularly where there is rotting vegetation. The fungus enters the body through the lungs, infecting them. The fungus then spreads to other areas of the body.The infection may affect the skin, bones and joints, and other areas. The disease usually affects people with weakened immune systems, such as those with HIV or who have had an organ transplant.[https://rarediseases.info.nih.gov/diseases/5931/blastomycosis ]" ;
+                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+                                       oboInOwl:hasDefinition "An opportunistic fungal infectious disease caused by Blastomyces dermatitidis. The infection typically occurs through the inhalation of fungal spores found in moist soil, decaying wood, or leaves." ;
                                        rdfs:comment """Although blastomycosis is especially dangerous for those with weak immune systems, most people diagnosed with blastomycosis have healthy immune systems
 Source: doi:10.1016/j.ccm.2017.04.006""" ;
                                        rdfs:label "blastomycosis"@en .
@@ -10167,52 +10116,17 @@ Source: doi:10.1016/j.ccm.2017.04.006""" ;
 
 ###  http://www.ebi.ac.uk/efo/EFO_0007211
 <http://www.ebi.ac.uk/efo/EFO_0007211> rdf:type owl:Class ;
-                                       owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty obo:BFO_0000051 ;
-                                                                                    owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000021>
-                                                                                  ]
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty obo:IDO_0000664 ;
-                                                                                    owl:someValuesFrom obo:MONDO_0000256
-                                                                                  ]
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ] ;
-                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                                       obo:IAO_0000412 "http://www.ebi.ac.uk/efo/EFO" ;
-                                       oboInOwl:hasDefinition "A fungal infectious disease that is caused by Coccidioides immitis. Affected individuals usually have mild flu-like symptoms. However, pneumonia and systemic involvement with the formation of abscesses may develop as complications of the disease. [ NCIT : P378 ]" ;
+                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+                                       oboInOwl:hasDefinition "An opportunistic fungal infectious disease also known as Valley Fever, is a fungal infectious disease caused by inhaling the spores of the fungi Coccidioides immitis or Coccidioides posadasii and primarily affecting lungs." ;
                                        oboInOwl:hasRelatedSynonym "San Joaquin Valley fever" ,
-                                                                  "Valley fever" ,
                                                                   "desert rheumatism" ;
                                        rdfs:label "coccidioidomycosis"@en .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0007229
 <http://www.ebi.ac.uk/efo/EFO_0007229> rdf:type owl:Class ;
-                                       owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                  [ rdf:type owl:Class ;
-                                                                                    owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty obo:IDO_0000664 ;
-                                                                                                    owl:someValuesFrom obo:MONDO_0000254
-                                                                                                  ]
-                                                                                                  [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty obo:IDO_0000664 ;
-                                                                                                    owl:someValuesFrom obo:MONDO_0000256
-                                                                                                  ]
-                                                                                                )
-                                                                                  ]
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty obo:BFO_0000051 ;
-                                                                                    owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000030>
-                                                                                  ]
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ] ;
-                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                                       obo:IAO_0000412 "http://www.ebi.ac.uk/efo/EFO" ;
-                                       oboInOwl:hasDefinition "A fungal infectious disease that can be caused by Cryptococcus neoformans. It can present as an acute, chronic, localized or disseminated infection. Sites of involvement include the lungs, central nervous system and meninges, skin, and visceral organs.--2004 [ NCIT : P378 ]" ,
-                                                              "A fungal infectious disease that is caused by the fungus Cryptococcus neoformansacute. Can be a chronic, localized or disseminated infection. Sites of involvement include the lungs, central nervous system and meninges, skin, and visceral organs.--2004 [ NCIT : P378 ]" ;
+                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00111> ;
+                                       oboInOwl:hasDefinition "An opportunistic fungal infectious disease caused by fungi in the Cryptococcus genus, primarily Cryptococcus neoformans and Cryptococcus gattii. It commonly affects individuals with weakened immune systems, such as those with HIV/AIDS, but can also occur in otherwise healthy individuals." ;
                                        rdfs:label "cryptococcosis"@en .
 
 
@@ -10258,37 +10172,8 @@ oboInOwl:ObsoleteClass rdf:type owl:Class ;
 
 ###  http://www.orpha.net/ORDO/Orphanet_826
 <http://www.orpha.net/ORDO/Orphanet_826> rdf:type owl:Class ;
-                                         owl:equivalentClass [ rdf:type owl:Class ;
-                                                               owl:unionOf ( [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000005>
-                                                                                                    [ rdf:type owl:Class ;
-                                                                                                      owl:unionOf ( <http://www.co-ode.org/ontologies/MIDO_0000067>
-                                                                                                                    [ rdf:type owl:Restriction ;
-                                                                                                                      owl:onProperty obo:BFO_0000051 ;
-                                                                                                                      owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0004001>
-                                                                                                                    ]
-                                                                                                                  )
-                                                                                                    ]
-                                                                                                    [ rdf:type owl:Restriction ;
-                                                                                                      owl:onProperty obo:IDO_0000664 ;
-                                                                                                      owl:someValuesFrom obo:MONDO_0000254
-                                                                                                    ]
-                                                                                                  ) ;
-                                                                               rdf:type owl:Class
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:IDO_0000664 ;
-                                                                               owl:someValuesFrom obo:MONDO_0000256
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:IDO_0000664 ;
-                                                                               owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                             ]
-                                                                           )
-                                                             ] ;
-                                         rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
-                                         obo:IAO_0000412 "http://www.orpha.net/ORDO/Orphanet" ;
-                                         oboInOwl:hasDefinition """Sporotrichosis is a fungal infectious disease that is caused by the dimorphic fungus Sporothrix schenckii, generally occurring by traumatic inoculation of fungus from contaminated soil, plants, and organic matter, that has a highly variable disease spectrum but that usually presents as a subcutaneous mycosis with a single sporotrichotic chancre that may ulcerate and can then progress to lymphocutaneous (most common form; sporotrichotic chancre at inoculation site and a string of similar nodules along the proximal lymphatics), fixed cutaneous (localized asymptomatic, erythematous, papules at the inoculation site), or multifocal or disseminated cutaneous (rare form, with 3 or more lesions involving 2 different anatomical sites) forms. 
-Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as chronic pneumonitis while extracutaneous or systemic sporotrichosis (with osteoarticular, pulmonary, and central nervous system/meningeal disease) has also been reported, usually occurring in the setting of immunosuppression.""" ;
+                                         rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#MIDO_00112> ;
+                                         oboInOwl:hasDefinition "A primary (dimorphic) fungal infectious disease caused by Sporothrix species, most commonly Sporothrix schenckii. It primarily affects the skin but can spread to other tissues, especially in immunocompromised individuals." ;
                                          oboInOwl:hasRelatedSynonym "rose gardener’s disease" ;
                                          rdfs:comment "can also be caused by sporothrix brasiliensis fungus" ;
                                          rdfs:label "sporotrichosis"@en .
