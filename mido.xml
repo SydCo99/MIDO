@@ -11090,7 +11090,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77201"/>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/MONDO</obo:IAO_0000412>
         <oboInOwl:hasDefinition>A fungal infectious disease that affects the eyes. It can be caused by a variety of fungi, usually through four possible mechanisms: superficial infection producing conjunctivitis, keratitis, or lacrimal obstruction; extension of infection from neighboring structures - skin, paranasal sinuses, nasopharynx; direct introduction during surgery or accidental penetrating trauma; or via the blood or lymphatic routes in patients with underlying mycoses. [ MESH : D015821 ]</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">fungal eye infection</rdfs:label>
@@ -11673,7 +11673,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000031"/>
         <obo:IAO_0000116>this term deviated from similarly labeled DOID:1564 in order to better fit the IDO structures of disease and infection</obo:IAO_0000116>
         <obo:IAO_0000117>Sydney Cohen</obo:IAO_0000117>
         <oboInOwl:hasDefinition>An infectious disease that has material basis in some mycosis, which pass the resistance barriers of the body.</oboInOwl:hasDefinition>
@@ -12929,7 +12929,6 @@ doi: 10.3904/kjim.2004.19.1.38</obo:IAO_0000119>
     <!-- http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101 -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MIDO_0000101">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <dc:creator>Ram Challa 
 https://orcid.org/0009-0003-7246-1252</dc:creator>
         <rdfs:label>superficial fungal infectious disease</rdfs:label>

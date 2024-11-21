@@ -1,4 +1,4 @@
-@prefix : <http://purl.obolibrary.org/obo/mido.owl#> .
+@prefix : <http://purl.obolibrary.org/obo/ido.owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,17 +9,23 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
-@base <http://purl.obolibrary.org/obo/mido.owl#> .
+@base <http://purl.obolibrary.org/obo/ido.owl#> .
 
-<http://purl.obolibrary.org/obo/mido.owl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <http://purl.obolibrary.org/obo/mido.owl> ;
-                                           owl:imports <http://purl.obolibrary.org/obo/ido/2017-11-03/ido.owl> ;
-                                           protege:defaultLanguage "en" ;
-                                           dc:creator "Sydney Cohen" ;
-                                           dc:license <http://creativecommons.org/licenses/by/3.0/> ;
-                                           rdfs:comment "This is an extension of the Infectious Disease Ontology. MIDO's purpose is to provide standardized human- and computer-interpretable annotation and representation of various fungal infectious diseases. Its development follows the OBO Foundry Principles."@en ;
-                                           rdfs:seeAlso "https://github.com/SydCo99/MIDO.git" ;
-                                           owl:versionInfo "2022-12-04" .
+<http://purl.obolibrary.org/obo/ido.owl> rdf:type owl:Ontology ;
+                                          owl:versionIRI <http://purl.obolibrary.org/obo/ido/2017-11-03/ido.owl> ;
+                                          protege:defaultLanguage "en" ;
+                                          dc:contributor "Jie Zheng" ;
+                                          dc:creator "Alan Ruttenberg" ,
+                                                     "Albert Goldfain" ,
+                                                     "Alexander Diehl" ,
+                                                     "Barry Smith" ,
+                                                     "Bjoern Peters" ,
+                                                     "Lindsay Cowell" ;
+                                          dc:date "2017-11-03T15:13:52"^^xsd:dateTime ;
+                                          dc:license <http://creativecommons.org/licenses/by/3.0/> ;
+                                          rdfs:comment "The core Infectious Disease Ontology is an ontology of entities generally relevant to both the biomedical and clinical aspects of infectious diseases, including terms such as 'pathogen', 'host', 'vector', and 'vaccine'.  The structure of IDO adheres to the Basic Formal Ontology.  Terms in IDO that are within the scope of other OBO Foundry ontologies, such as the Gene Ontology, are derived from those ontologies.  Other terms are defined as cross-products of terms from Foundry ontologies to the extent possible. For more information, see http://www.infectiousdiseaseontology.org/Home.html. "@en ;
+                                          rdfs:seeAlso "http://www.infectiousdiseaseontology.org" ;
+                                          owl:versionInfo "2017-11-03" .
 
 #################################################################
 #    Annotation properties
@@ -116,8 +122,8 @@ We also have the outstanding issue of how to aim different definitions to differ
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition"@en ,
-                           "definition" ,
+                rdfs:label "definition" ,
+                           "definition"@en ,
                            "textual definition" .
 
 
@@ -519,11 +525,6 @@ rdfs:label rdf:type owl:AnnotationProperty ;
 
 ###  http://www.w3.org/2000/01/rdf-schema#seeAlso
 rdfs:seeAlso rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#closeMatch
-<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty ;
-                                                 rdfs:label "has close match" .
 
 
 ###  http://xmlns.com/foaf/0.1/homepage
@@ -988,8 +989,8 @@ obo:RO_0002234 rdf:type owl:ObjectProperty ;
 ###  http://purl.obolibrary.org/obo/RO_0002297
 obo:RO_0002297 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf obo:IDO_0000660 ;
-               obo:IAO_0000112 "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ,
-                               "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ;
+               obo:IAO_0000112 "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ,
+                               "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ;
                obo:IAO_0000114 obo:IAO_0000125 ;
                obo:IAO_0000117 "Chris Mungall" ;
                obo:IAO_0000119 "GOC:mtg_berkeley_2013" ;
@@ -1307,7 +1308,7 @@ obo:BFO_0000006 rdf:type owl:Class ;
                 obo:IAO_0000116 "BFO 2 Reference: Spatial regions do not participate in processes."@en ,
                                 "Spatial region doesn't have a closure axiom because the subclasses don't exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn't overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional."@en ;
                 obo:IAO_0000600 "A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])"@en ;
-                obo:IAO_0000601 "All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])"@en ;
+                obo:IAO_0000601 "All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])"@en ;
                 obo:IAO_0000602 "(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] " ,
                                 "(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] " ;
                 rdfs:isDefinedBy obo:bfo.owl ;
@@ -1331,7 +1332,7 @@ obo:BFO_0000006 rdf:type owl:Class ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000006 ;
    owl:annotatedProperty obo:IAO_0000601 ;
-   owl:annotatedTarget "All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])"@en ;
+   owl:annotatedTarget "All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/036-001>
  ] .
 
@@ -1357,7 +1358,7 @@ obo:BFO_0000008 rdf:type owl:Class ;
                 obo:BFO_0000180 "TemporalRegion" ;
                 obo:IAO_0000116 "Temporal region doesn't have a closure axiom because the subclasses don't exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn't overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional"@en ;
                 obo:IAO_0000600 "A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])"@en ;
-                obo:IAO_0000601 "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])"@en ,
+                obo:IAO_0000601 "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])"@en ,
                                 "Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])"@en ;
                 obo:IAO_0000602 "(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] " ,
                                 "(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] " ,
@@ -1383,7 +1384,7 @@ obo:BFO_0000008 rdf:type owl:Class ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000008 ;
    owl:annotatedProperty obo:IAO_0000601 ;
-   owl:annotatedTarget "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])"@en ;
+   owl:annotatedTarget "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/101-001>
  ] .
 
@@ -1452,7 +1453,7 @@ obo:BFO_0000011 rdf:type owl:Class ;
                                 "the spatiotemporal region occupied by a process of cellular meiosis."@en ,
                                 "the spatiotemporal region occupied by the development of a cancer tumor"@en ;
                 obo:IAO_0000600 "A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])"@en ;
-                obo:IAO_0000601 "All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])"@en ,
+                obo:IAO_0000601 "All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])"@en ,
                                 "Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])"@en ,
                                 "Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])"@en ,
                                 "Every spatiotemporal region occupies_spatiotemporal_region itself."@en ,
@@ -1475,7 +1476,7 @@ obo:BFO_0000011 rdf:type owl:Class ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000011 ;
    owl:annotatedProperty obo:IAO_0000601 ;
-   owl:annotatedTarget "All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])"@en ;
+   owl:annotatedTarget "All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/096-001>
  ] .
 
@@ -1911,8 +1912,8 @@ obo:BFO_0000027 rdf:type owl:Class ;
                                 "the nitrogen atoms in the atmosphere"@en ,
                                 "the restaurants in Palo Alto"@en ,
                                 "your collection of Meissen ceramic plates."@en ;
-                obo:IAO_0000116 "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)."@en ,
-                                "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " ;
+                obo:IAO_0000116 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " ,
+                                "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)."@en ;
                 obo:IAO_0000119 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158." ;
                 obo:IAO_0000600 "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])"@en ;
                 obo:IAO_0000602 "(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] " ;
@@ -2019,6 +2020,39 @@ obo:BFO_0000029 rdf:type owl:Class ;
    owl:annotatedProperty obo:IAO_0000602 ;
    owl:annotatedTarget "(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] " ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/034-002>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030
+obo:BFO_0000030 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000040 ;
+                obo:BFO_0000179 "object" ;
+                obo:BFO_0000180 "Object" ;
+                obo:IAO_0000112 "atom"@en ,
+                                "cell"@en ,
+                                "cells and organisms"@en ,
+                                "engineered artifacts"@en ,
+                                "grain of sand"@en ,
+                                "molecule"@en ,
+                                "organelle"@en ,
+                                "organism"@en ,
+                                "planet"@en ,
+                                "solid portions of matter"@en ,
+                                "star"@en ;
+                obo:IAO_0000116 "BFO 2 Reference: BFO rests on the presupposition that at multiple micro-, meso- and macroscopic scales reality exhibits certain stable, spatially separated or separable material units, combined or combinable into aggregates of various sorts (for example organisms into what are called ‘populations’). Such units play a central role in almost all domains of natural science from particle physics to cosmology. Many scientific laws govern the units in question, employing general terms (such as ‘molecule’ or ‘planet’) referring to the types and subtypes of units, and also to the types and subtypes of the processes through which such units develop and interact. The division of reality into such natural units is at the heart of biological science, as also is the fact that these units may form higher-level units (as cells form multicellular organisms) and that they may also form aggregates of units, for example as cells form portions of tissue and organs form families, herds, breeds, species, and so on. At the same time, the division of certain portions of reality into engineered units (manufactured artifacts) is the basis of modern industrial technology, which rests on the distributed mass production of engineered parts through division of labor and on their assembly into larger, compound units such as cars and laptops. The division of portions of reality into units is one starting point for the phenomenon of counting."@en ,
+                                "BFO 2 Reference: Each object is such that there are entities of which we can assert unproblematically that they lie in its interior, and other entities of which we can assert unproblematically that they lie in its exterior. This may not be so for entities lying at or near the boundary between the interior and exterior. This means that two objects – for example the two cells depicted in Figure 3 – may be such that there are material entities crossing their boundaries which belong determinately to neither cell. Something similar obtains in certain cases of conjoined twins (see below)."@en ,
+                                "BFO 2 Reference: To say that b is causally unified means: b is a material entity which is such that its material parts are tied together in such a way that, in environments typical for entities of the type in question,if c, a continuant part of b that is in the interior of b at t, is larger than a certain threshold size (which will be determined differently from case to case, depending on factors such as porosity of external cover) and is moved in space to be at t at a location on the exterior of the spatial region that had been occupied by b at t, then either b’s other parts will be moved in coordinated fashion or b will be damaged (be affected, for example, by breakage or tearing) in the interval between t and t.causal changes in one part of b can have consequences for other parts of b without the mediation of any entity that lies on the exterior of b. Material entities with no proper material parts would satisfy these conditions trivially. Candidate examples of types of causal unity for material entities of more complex sorts are as follows (this is not intended to be an exhaustive list):CU1: Causal unity via physical coveringHere the parts in the interior of the unified entity are combined together causally through a common membrane or other physical covering\\. The latter points outwards toward and may serve a protective function in relation to what lies on the exterior of the entity [13, 47"@en ,
+                                "BFO 2 Reference: an object is a maximal causally unified material entity"@en ,
+                                "BFO 2 Reference: ‘objects’ are sometimes referred to as ‘grains’ [74"@en ;
+                obo:IAO_0000600 "b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])"@en ;
+                rdfs:isDefinedBy obo:bfo.owl ;
+                rdfs:label "object"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000030 ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget "b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])"@en ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/024-001>
  ] .
 
 
@@ -2137,15 +2171,15 @@ obo:BFO_0000038 rdf:type owl:Class ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000038 ;
-   owl:annotatedProperty obo:IAO_0000602 ;
-   owl:annotatedTarget "(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] " ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget "A one-dimensional temporal region is a temporal region that is extended. (axiom label in BFO2 Reference: [103-001])"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/103-001>
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000038 ;
-   owl:annotatedProperty obo:IAO_0000600 ;
-   owl:annotatedTarget "A one-dimensional temporal region is a temporal region that is extended. (axiom label in BFO2 Reference: [103-001])"@en ;
+   owl:annotatedProperty obo:IAO_0000602 ;
+   owl:annotatedTarget "(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] " ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/103-001>
  ] .
 
@@ -2488,11 +2522,13 @@ obo:CARO_0000000 rdf:type owl:Class ;
                  rdfs:subClassOf obo:BFO_0000040 ;
                  owl:disjointWith obo:IDO_0000504 ,
                                   obo:IDO_0000528 ,
+                                  obo:IDO_0000544 ,
                                   obo:IDO_0000555 ,
                                   obo:IDO_0000556 ,
                                   obo:IDO_0000558 ,
                                   obo:IDO_0000559 ,
                                   obo:IDO_0000560 ,
+                                  obo:IDO_0000561 ,
                                   obo:IDO_0000562 ,
                                   obo:IDO_0000586 ,
                                   obo:IDO_0000617 ;
@@ -2524,16 +2560,6 @@ obo:CL_0000738 rdf:type owl:Class ;
                obo:IAO_0000115 "An achromatic cell of the myeloid or lymphoid lineages capable of ameboid movement, found in blood or other tissue." ;
                obo:IAO_0000412 obo:cl.owl ;
                rdfs:label "leukocyte" .
-
-
-###  http://purl.obolibrary.org/obo/DOID_4337
-obo:DOID_4337 rdf:type owl:Class ;
-              obo:IAO_0000412 "http://purl.obolibrary.org/obo/DOID" ;
-              oboInOwl:hasDefinition "A fungal infectious disease (specifically, dermatophytosis) that results_in contagious fungal infection located_in scalp, located_in hair of head, located_in eyebrow or located_in eyelash, has_material_basis_in Ascomycota fungi that belong to a group called dermatophytes and has_symptom itching of the scalp, has_symptom pus filled lesions on the scalp, and has_symptom patches of hair loss, sometimes with a 'black dot' pattern." ;
-              oboInOwl:hasRelatedSynonym "dermatophytosis" ,
-                                         "tinea" ,
-                                         "tinea capitis" ;
-              rdfs:label "ringworm"@en .
 
 
 ###  http://purl.obolibrary.org/obo/GO_0000003
@@ -2745,10 +2771,85 @@ obo:GO_0085031 rdf:type owl:Class ;
                rdfs:label "commensalism" .
 
 
-###  http://purl.obolibrary.org/obo/HP_0012203
-obo:HP_0012203 rdf:type owl:Class ;
-               oboInOwl:hasDefinition "A fungal infectious disease that tends to cause finger-nails or toe-nails to thicken, discolor, disfigure, and split. [ HPO : probinson ]" ;
-               rdfs:label "onychomycosis"@en .
+###  http://purl.obolibrary.org/obo/IAO_0000027
+obo:IAO_0000027 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000030 ;
+                rdfs:label "data item"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+obo:IAO_0000030 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000031 ;
+                rdfs:label "information content entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000078
+obo:IAO_0000078 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000002
+                                                  obo:IAO_0000120
+                                                  obo:IAO_0000121
+                                                  obo:IAO_0000122
+                                                  obo:IAO_0000123
+                                                  obo:IAO_0000124
+                                                  obo:IAO_0000125
+                                                  obo:IAO_0000423
+                                                  obo:IAO_0000428
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000111 "curation status specification"@en ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
+                obo:IAO_0000115 "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
+                obo:IAO_0000116 "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)"@en ;
+                obo:IAO_0000117 "PERSON:Bill Bug"@en ;
+                obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ,
+                                "OBI_0000266"@en ;
+                rdfs:label "curation status specification"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000102
+obo:IAO_0000102 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000027 ;
+                obo:IAO_0000115 "data about an ontology part is a data item about a part of an ontology, for example a term"@en ;
+                obo:IAO_0000117 "Person:Alan Ruttenberg" ;
+                rdfs:label "data about an ontology part"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000225
+obo:IAO_0000225 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000103
+                                                  obo:IAO_0000226
+                                                  obo:IAO_0000227
+                                                  obo:IAO_0000228
+                                                  obo:IAO_0000229
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000111 "obsolescence reason specification"@en ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
+                obo:IAO_0000115 "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
+                obo:IAO_0000116 "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."@en ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Melanie Courtot"@en ;
+                rdfs:label "obsolescence reason specification"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000409
+obo:IAO_0000409 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000410
+                                                  obo:IAO_0000420
+                                                  obo:IAO_0000421
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000112 "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities." ;
+                obo:IAO_0000115 "A denotator type indicates how a term should be interpreted from an ontological perspective." ;
+                obo:IAO_0000117 "Alan Ruttenberg" ;
+                obo:IAO_0000119 "Barry Smith, Werner Ceusters" ;
+                rdfs:label "denotator type" .
 
 
 ###  http://purl.obolibrary.org/obo/IDO_0000000
@@ -3913,6 +4014,7 @@ obo:IDO_0000400 rdf:type owl:Class ;
                                 ] ;
                 owl:disjointWith obo:IDO_0000405 ,
                                  obo:IDO_0000417 ,
+                                 obo:IDO_0000424 ,
                                  obo:IDO_0000430 ,
                                  obo:IDO_0000431 ,
                                  obo:IDO_0000432 ,
@@ -4014,6 +4116,7 @@ obo:IDO_0000405 rdf:type owl:Class ;
                                   owl:someValuesFrom obo:IDO_0000528
                                 ] ;
                 owl:disjointWith obo:IDO_0000417 ,
+                                 obo:IDO_0000424 ,
                                  obo:IDO_0000430 ,
                                  obo:IDO_0000431 ,
                                  obo:IDO_0000432 ,
@@ -4073,8 +4176,8 @@ obo:IDO_0000406 rdf:type owl:Class ;
                                 "Alexander Diehl" ,
                                 "Lindsay Cowell" ;
                 obo:IAO_0000118 "opportunitistic pathogenic disposition"@en ;
-                rdfs:comment "This includes individuals who are immunocompromised or who have damaged barriers that normally protect against infection (e.g. skin)."@en ,
-                             "The disposition is realized in a process by which the bearer becomes part of a disorder in an immunocompromised host." ;
+                rdfs:comment "The disposition is realized in a process by which the bearer becomes part of a disorder in an immunocompromised host." ,
+                             "This includes individuals who are immunocompromised or who have damaged barriers that normally protect against infection (e.g. skin)."@en ;
                 rdfs:label "opportunistic infectious disposition"@en .
 
 
@@ -4316,7 +4419,8 @@ obo:IDO_0000417 rdf:type owl:Class ;
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
-                owl:disjointWith obo:IDO_0000430 ,
+                owl:disjointWith obo:IDO_0000424 ,
+                                 obo:IDO_0000430 ,
                                  obo:IDO_0000431 ,
                                  obo:IDO_0000432 ,
                                  obo:IDO_0000433 ,
@@ -4502,6 +4606,37 @@ obo:IDO_0000423 rdf:type owl:Class ;
                                 "Alexander Diehl" ,
                                 "Lindsay Cowell" ;
                 rdfs:label "fomite role"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000424
+obo:IDO_0000424 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000023 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000052 ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty obo:RO_0001015 ;
+                                                                              owl:someValuesFrom obo:IDO_0000596
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                ] ;
+                owl:disjointWith obo:IDO_0000430 ,
+                                 obo:IDO_0000431 ,
+                                 obo:IDO_0000432 ,
+                                 obo:IDO_0000433 ,
+                                 obo:IDO_0000434 ,
+                                 obo:IDO_0000435 ,
+                                 obo:IDO_0000629 ,
+                                 obo:IDO_0000635 ;
+                obo:IAO_0000115 "A role borne by a material entity in virtue of the fact that it is a habitat in which infectious agents can persist and multiply and from which they can be transmitted in virtue of prevailing practices of potential hosts."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:comment "If the material entity bearing the reservoir role is an organism, then this organism also bears the host role.  The organism may also bear the vector role." ,
+                             "The role is realized in a process that has as part life and multiplication processes of an infectious agent and a transmission process.  " ;
+                rdfs:label "reservoir of infectious agent role"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IDO_0000425
@@ -5700,6 +5835,34 @@ obo:IDO_0000471 rdf:type owl:Class ;
                 rdfs:label "complex infection"@en .
 
 
+###  http://purl.obolibrary.org/obo/IDO_0000472
+obo:IDO_0000472 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:IDO_0000586
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:BFO_0000051 ;
+                                                             owl:someValuesFrom [ owl:intersectionOf ( obo:IDO_0000596
+                                                                                                       [ rdf:type owl:Class ;
+                                                                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0001025 ;
+                                                                                                                            owl:someValuesFrom obo:CL_0000000
+                                                                                                                          ]
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IDO_0000586 ;
+                owl:disjointWith obo:IDO_0000473 ;
+                obo:IAO_0000115 "An infection for which the infectious agents that are part of the infection persist in the extracellular space of the host."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "extracellular infection"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IDO_0000473
 obo:IDO_0000473 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( obo:IDO_0000586
@@ -5718,6 +5881,8 @@ obo:IDO_0000473 rdf:type owl:Class ;
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf obo:IDO_0000586 ;
+                owl:disjointWith obo:IDO_0000505 ,
+                                 obo:IDO_0000506 ;
                 obo:IAO_0000115 "An infection for which the infectious agents that are part of the infection persist inside host cells."@en ;
                 obo:IAO_0000117 "Albert Goldfain" ,
                                 "Alexander Diehl" ,
@@ -5725,9 +5890,21 @@ obo:IDO_0000473 rdf:type owl:Class ;
                 rdfs:label "intracellular infection"@en .
 
 
+###  http://purl.obolibrary.org/obo/IDO_0000474
+obo:IDO_0000474 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IDO_0000586 ;
+                owl:disjointWith obo:IDO_0000475 ;
+                obo:IAO_0000115 "An infection for which the infectious agents that are part of the infection are distributed throughout the host."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "systemic infection"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IDO_0000475
 obo:IDO_0000475 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IDO_0000586 ;
+                owl:disjointWith obo:IDO_0000506 ;
                 obo:IAO_0000115 "An infection for which the infectious agents that are part of the infection are limited to a relatively small area of the host's body."@en ;
                 obo:IAO_0000117 "Albert Goldfain" ,
                                 "Alexander Diehl" ,
@@ -6128,6 +6305,59 @@ obo:IDO_0000504 rdf:type owl:Class ;
                 rdfs:label "infectious disorder"@en .
 
 
+###  http://purl.obolibrary.org/obo/IDO_0000505
+obo:IDO_0000505 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:IDO_0000586
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:BFO_0000051 ;
+                                                             owl:someValuesFrom [ owl:intersectionOf ( obo:IDO_0000596
+                                                                                                       obo:NCBITaxon_10239
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty obo:RO_0001025 ;
+                                                                                                         owl:someValuesFrom obo:UBERON_0000178
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IDO_0000472 ;
+                owl:disjointWith obo:IDO_0000506 ;
+                obo:IAO_0000115 "An infection that has as part virus particles located in the blood."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "viremia"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000506
+obo:IDO_0000506 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:IDO_0000586
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:BFO_0000051 ;
+                                                             owl:someValuesFrom [ owl:intersectionOf ( obo:IDO_0000596
+                                                                                                       obo:NCBITaxon_2
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty obo:RO_0001025 ;
+                                                                                                         owl:someValuesFrom obo:UBERON_0000178
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IDO_0000472 ;
+                obo:IAO_0000115 "An infection that has as part bacteria located in the blood."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "bacteremia"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IDO_0000507
 obo:IDO_0000507 rdf:type owl:Class ;
                 rdfs:subClassOf oboInOwl:ObsoleteClass ;
@@ -6398,7 +6628,8 @@ obo:IDO_0000528 rdf:type owl:Class ;
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf obo:BFO_0000040 ;
-                owl:disjointWith obo:IDO_0000555 ,
+                owl:disjointWith obo:IDO_0000544 ,
+                                 obo:IDO_0000555 ,
                                  obo:IDO_0000556 ,
                                  obo:IDO_0000617 ;
                 obo:IAO_0000115 "A material entity with a pathogenic disposition."@en ;
@@ -6663,6 +6894,45 @@ obo:IDO_0000543 rdf:type owl:Class ;
                                 "Alexander Diehl" ,
                                 "Lindsay Cowell" ;
                 rdfs:label "vehicle of infectious agent"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000544
+obo:IDO_0000544 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:RO_0000087 ;
+                                                             owl:someValuesFrom obo:IDO_0000423
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IDO_0000543 ;
+                owl:disjointWith obo:OBI_0100026 ,
+                                 obo:OGMS_0000045 ;
+                obo:IAO_0000115 "A material entity bearing a fomite role."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "fomite"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000545
+obo:IDO_0000545 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:RO_0000087 ;
+                                                             owl:someValuesFrom obo:IDO_0000424
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:BFO_0000040 ;
+                owl:disjointWith obo:IDO_0000617 ;
+                obo:IAO_0000115 "A material entity bearing an infectious agent reservoir role."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "infectious agent reservoir"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IDO_0000546
@@ -6936,6 +7206,26 @@ obo:IDO_0000560 rdf:type owl:Class ;
                 rdfs:label "antifungal"@en .
 
 
+###  http://purl.obolibrary.org/obo/IDO_0000561
+obo:IDO_0000561 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:RO_0000091 ;
+                                                             owl:someValuesFrom obo:IDO_0000443
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:BFO_0000040 ;
+                owl:disjointWith obo:IDO_0000586 ,
+                                 obo:OGMS_0000045 ;
+                obo:IAO_0000115 "A material entity bearing an antiparasitic disposition."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "antiparasitic"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IDO_0000562
 obo:IDO_0000562 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
@@ -6984,6 +7274,31 @@ obo:IDO_0000563 rdf:type owl:Class ;
                                 "Lindsay Cowell" ;
                 obo:IAO_0000118 "microbicidal [entity]"@en ;
                 rdfs:label "microbicide"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000564
+obo:IDO_0000564 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:RO_0000091 ;
+                                                             owl:someValuesFrom [ owl:intersectionOf ( obo:IDO_0000440
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty obo:BFO_0000054 ;
+                                                                                                         owl:allValuesFrom obo:UBERON_0035944
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IDO_0000559 ;
+                obo:IAO_0000115 "A material entity with an antiviral disposition that is realized in a process of killing viruses."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "viricide"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IDO_0000565
@@ -8248,6 +8563,56 @@ obo:IDO_0000644 rdf:type owl:Class ;
                 rdfs:label "pregnancy-induced immunosuppression"@en .
 
 
+###  http://purl.obolibrary.org/obo/IDO_0000645
+obo:IDO_0000645 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IDO_0000586 ;
+                obo:IAO_0000115 "An infection that has as part organisms of the Genus Candida."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "candidiasis"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000646
+obo:IDO_0000646 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IDO_0000586 ;
+                obo:IAO_0000115 "An infection that has as part organisms of the Species Trichomonas vaginalis."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "trichomoniasis"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000647
+obo:IDO_0000647 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IDO_0000586 ;
+                obo:IAO_0000115 "An infection that has as part organisms of the Genus Leptospira."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "leptospirosis"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000648
+obo:IDO_0000648 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IDO_0000586 ;
+                obo:IAO_0000115 "An infection located in the bowel and that has as part organisms of the Genus Shigella."@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "Shigellosis"@en .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000649
+obo:IDO_0000649 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IDO_0000586 ;
+                obo:IAO_0000115 "An infection located in the colon and that has as part organisms of the Species Entamoeba histolytica"@en ;
+                obo:IAO_0000117 "Albert Goldfain" ,
+                                "Alexander Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "amebiasis"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IDO_0000650
 obo:IDO_0000650 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IDO_0000604 ;
@@ -8441,6 +8806,15 @@ obo:IDO_0000656 rdf:type owl:Class ;
                 obo:IAO_0000115 "A pathogen transmission process in which a pathogen is transmitted from one host to another of the same Species, and the two hosts are not in a parent-child relationship." ;
                 obo:IAO_0000117 "Lindsay Cowell" ;
                 rdfs:label "horizontal pathogen transmission process" .
+
+
+###  http://purl.obolibrary.org/obo/IDO_0000657
+obo:IDO_0000657 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000015 ;
+                obo:IAO_0000115 "A process that results in death." ;
+                obo:IAO_0000117 "Alex Diehl" ,
+                                "Lindsay Cowell" ;
+                rdfs:label "process that results in death" .
 
 
 ###  http://purl.obolibrary.org/obo/IDO_0000658
@@ -8658,740 +9032,6 @@ obo:IDO_0001014 rdf:type owl:Class ;
                 rdfs:label "immunosuppressed human experiencing drug-based immunosuppression due to organ transplant"@en .
 
 
-###  http://purl.obolibrary.org/obo/MIDO_0000005
-obo:MIDO_0000005 rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( obo:IDO_0000436
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty obo:IDO_0000664 ;
-                                                              owl:someValuesFrom obo:NCIT_C3245
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
-                 rdfs:subClassOf obo:IDO_0000436 ;
-                 obo:IAO_0000115 "An infectious disease that has material basis in some mycosis, which pass the resistance barriers of the body." ;
-                 obo:IAO_0000116 "this term deviated from similarly labeled DOID:1564 in order to better fit the IDO structures of disease and infection" ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 rdfs:label "fungal infectious disease"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000008
-obo:MIDO_0000008 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_00131 ;
-                 obo:IAO_0000115 "An aspergillosis that is characterized by an allergic reaction to a fungus called aspergillus, which may cause inflammation of the airways and air sacs of the lungs." ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 obo:IAO_0000119 "https://www.hopkinsmedicine.org/health/conditions-and-diseases/allergic-pulmonary-aspergillosis" ;
-                 rdfs:label "allergic aspergillosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000009
-obo:MIDO_0000009 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_0000008 ;
-                 obo:IAO_0000115 "An allergic aspergillosis that may cause inflammation in the sinuses and symptoms of a sinus infection (drainage, stuffiness, headache) but doesn’t necessarily cause an infection." ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 rdfs:label "allergic aspergillus sinusitis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000010
-obo:MIDO_0000010 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_00131 ;
-                 obo:IAO_0000115 "An aspergillosis that is caused by one species of Aspergillus, A. fumigatus, that becomes resistant to certain medicines used to treat it. Patients with resistant infections might not get better with treatment" ;
-                 obo:IAO_0000119 "(https://www.cdc.gov/fungal/diseases/aspergillosis/antifungal-resistant.html)" ;
-                 rdfs:comment "Triazole antifungal drugs, commonly called azoles, are the primary treatment for aspergillosis. Azole-resistant A. fumigatus infections are difficult to treat, and these patients are up to 33% more likely to die than patients with infections that can be treated with azole." ;
-                 rdfs:label "azole-resistant aspergillus fumigatus disease"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000031
-obo:MIDO_0000031 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_00141 ;
-                 obo:IAO_0000115 "A cryptococcosis that is caused by a C. gatti infection that may cause pulmonary cryptococcosis, basal meningitis and cerebral cryptococcomas. It is also associated with skin, soft tissue, lymph node, bone, and joint infections." ;
-                 oboInOwl:hasExactSynonym "C. gatti cryptococcosis" ;
-                 rdfs:comment "In humans, C. gattii causes predominantly meningoencephalitis and other CNS and pulmonary diseases and is associated with substantial morbidity. It also poses a concern for veterinarians, and some animal infections, in particular those in feline and canine companion animals and Australian native koalas, represent sentinels for human exposure." ,
-                              "more info: https://doi.org/10.1128/CMR.00126-13" ;
-                 rdfs:label "cryptococcus gattii cryptococcosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000032
-obo:MIDO_0000032 rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.orpha.net/ORDO/Orphanet_199323> ;
-                 obo:IAO_0000115 "An endophthalmitis that is caused by a bloodstream infection (for example, candidemia) spreads to one or both eyes" ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 obo:IAO_0000119 "https://doi.org/10.1016/j.ajo.2024.01.018" ,
-                                 "https://www.cdc.gov/fungal/diseases/fungal-eye-infections/definition.html" ;
-                 rdfs:label "endogenous fungal endophthalmitis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000033
-obo:MIDO_0000033 rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.orpha.net/ORDO/Orphanet_199323> ;
-                 obo:IAO_0000115 "An endophthalmitis that is caused by fungal spores entering the eye from an external source" ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 obo:IAO_0000119 "https://doi.org/10.1016/s0161-6420(88)33229-x" ,
-                                 "https://www.cdc.gov/fungal/diseases/fungal-eye-infections/definition.html" ;
-                 rdfs:label "exogenous fungal endophthalmitis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000040
-obo:MIDO_0000040 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_00111 ;
-                 obo:IAO_0000115 "An opportunistic fungal infectious disease caused by fungi in the order Mucorales, which include species like Rhizopus, Mucor, Rhizomucor, and Lichtheimia." ;
-                 obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 rdfs:comment "Mucormycosis occurs primarily in immunocompromised individuals, such as those with uncontrolled diabetes, organ transplants, cancer, or those receiving immunosuppressive therapies." ;
-                 rdfs:label "mucormycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000048
-obo:MIDO_0000048 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_0000058 ;
-                 obo:IAO_0000115 "A disseminated mucormycosis that is in the sinuses and that can spread to the brain. This is most common in people with uncontrolled diabetes and in people who have had a kidney transplant." ;
-                 obo:IAO_0000117 "Sydney Cohen" ,
-                                 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 obo:IAO_0000119 "https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html" ;
-                 oboInOwl:hasRelatedSynonym "sinus and brain mucormycosis" ;
-                 rdfs:label "rhinocerebral mucormycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000050
-obo:MIDO_0000050 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_0000058 ;
-                 obo:IAO_0000115 "A disseminated mucormycosis that primarily affects the pulmonary system. It is most common type of mucormycosis in people with cancer and in people who have had an organ transplant or a stem cell transplant. Usually invasive and life-threatening" ;
-                 obo:IAO_0000117 "Sydney Cohen" ,
-                                 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 oboInOwl:hasRelatedSynonym "lung mucormycosis" ;
-                 rdfs:comment """there is no specific sign and symptoms, diagnostic criteria and specific antigen test for the diagnosis and management of PM. Any history of fever non-responding to antibiotics with pulmonary signs should also raise the suspicion of fungal infection like PM.
-More info: doi: 10.21037/jtd.2017.02.31""" ;
-                 rdfs:label "pulmonary mucormycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000052
-obo:MIDO_0000052 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_0000058 ;
-                 obo:IAO_0000115 "A disseminated mucormycosis that is characterized by the invasion of Mucorales into the gastric mucosa. It is rare but potentially lethal form of mucormycosis. It may result in high mortality due to increased risk of complications in immunocompromised patients." ;
-                 obo:IAO_0000117 "Sydney Cohen" ,
-                                 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 obo:IAO_0000119 "https://doi.org/10.1155/2020/8876125" ;
-                 rdfs:comment "more common among young children than adults. Premature and low-birth-weight infants less than 1 month of age are at risk if they have had antibiotics, surgery, or medications that lower the body’s ability to fight germs and sickness." ;
-                 rdfs:label "gastrointestinal mucormycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000054
-obo:MIDO_0000054 rdf:type owl:Class ;
-                 owl:equivalentClass [ rdf:type owl:Class ;
-                                       owl:unionOf ( [ owl:intersectionOf ( obo:MIDO_0000040
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty obo:IDO_0000664 ;
-                                                                              owl:someValuesFrom obo:MONDO_0000254
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:IDO_0000664 ;
-                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                     ]
-                                                   )
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_0000040 ;
-                 obo:IAO_0000115 "A mucormycosis that is cutaneous (affecting skin, hair, eyes, nails, or potentially deeper levels of epidermis). It is an emerging fungal disease. It is usually acquired by direct inoculation through trauma. The clinical presentation is nonspecific, but an indurated plaque that rapidly evolves to necrosis is a common finding." ;
-                 obo:IAO_0000117 "Sydney Cohen" ,
-                                 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 obo:IAO_0000119 "https://doi.org/10.1590/abd1806-4841.20176614" ;
-                 rdfs:label "cutaneous mucormycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000058
-obo:MIDO_0000058 rdf:type owl:Class ;
-                 owl:equivalentClass [ rdf:type owl:Class ;
-                                       owl:unionOf ( [ owl:intersectionOf ( obo:MIDO_0000040
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty obo:IDO_0000664 ;
-                                                                              owl:someValuesFrom obo:MONDO_0000256
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:IDO_0000664 ;
-                                                       owl:someValuesFrom obo:MONDO_0000254
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:IDO_0000664 ;
-                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                     ]
-                                                   )
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_0000040 ;
-                 obo:IAO_0000115 "A mucormycosis that spreads through the bloodstream to affect another part of the body. Disseminated mucormycosis most commonly affects the brain, but also can affect other organs such as the spleen, heart, and skin." ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 obo:IAO_0000119 "https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html" ;
-                 rdfs:label "disseminated mucormycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000061
-obo:MIDO_0000061 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_000108 ;
-                 obo:IAO_0000115 "A subcutaneous fungal infectious disease that affects tissues in and beneath the skin, often extending to bones." ;
-                 obo:IAO_0000117 "Sydney Cohen" ,
-                                 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 oboInOwl:hasExactSynonym "eumycotic mycetoma" ;
-                 rdfs:comment "Eumycetoma is a mycetoma caused by fungi (eumycotic) rather than a mycetoma caused by bacteria (actinomycotic)" ,
-                              "Mycetoma is a WHO-recognized neglected tropical disease with a significant disease burden. It primarily affects those in tropical and subtropical climates who are in direct contact with soil." ,
-                              "non-exhaustive list of fungi that may cause the infection and disease. for more information, see https://doi.org/10.1111/jdv.13008" ;
-                 rdfs:label "eumycetoma"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000071
-obo:MIDO_0000071 rdf:type owl:Class ;
-                 owl:equivalentClass [ rdf:type owl:Class ;
-                                       owl:unionOf ( [ owl:intersectionOf ( obo:MIDO_00124
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty obo:IDO_0000664 ;
-                                                                              owl:someValuesFrom obo:MONDO_0000256
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:IDO_0000664 ;
-                                                       owl:someValuesFrom obo:MONDO_0000254
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:IDO_0000664 ;
-                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                     ]
-                                                   )
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_00124 ;
-                 obo:IAO_0000115 "A sporotrichosis that has spread to another part of the body, such as bones, joints, or central nervous system. This form of sporotrichosis usually affects people with health problems or who take medicines that lower the body’s ability to fight germs and sickness, such as people living with HIV" ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 obo:IAO_0000119 "https://www.cdc.gov/fungal/diseases/sporotrichosis/index.html" ;
-                 rdfs:label "disseminated sporotrichosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000072
-obo:MIDO_0000072 rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( obo:MIDO_00124
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty obo:IDO_0000664 ;
-                                                              owl:someValuesFrom obo:MONDO_0000256
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_00124 ;
-                 obo:IAO_0000115 "A sporotrichosis that follows inhalation of fungus and manifests as chronic pneumonitis while extracutaneous or systemic sporotrichosis (with osteoarticular, pulmonary, and central nervous system/meningeal disease), usually occurring in the setting of immunosuppression." ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 rdfs:comment "adding specificity to orphanet parent term" ,
-                              "is rare but can happen after someone breathes in fungal spores from the environment." ;
-                 rdfs:label "pulmonary sporotrichosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000073
-obo:MIDO_0000073 rdf:type owl:Class ;
-                 owl:equivalentClass [ rdf:type owl:Class ;
-                                       owl:unionOf ( [ owl:intersectionOf ( obo:MIDO_00124
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty obo:IDO_0000664 ;
-                                                                              owl:someValuesFrom obo:MONDO_0000254
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:IDO_0000664 ;
-                                                       owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                     ]
-                                                   )
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_00124 ;
-                 obo:IAO_0000115 "A sporotrichosis that most commonly affects the skin on the hands or arms. Can occur when the fungus enters the skin through a small cut or scrape, usually after someone touches contaminated plant matter." ;
-                 obo:IAO_0000117 "Sydney Cohen" ;
-                 obo:IAO_0000119 "https://www.cdc.gov/fungal/diseases/sporotrichosis/index.html" ;
-                 rdfs:comment "most common form of the infection. It usually occurs on a person’s hand or the arm after touching contaminated plant matter." ;
-                 rdfs:label "cutaneous sporotrichosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000074
-obo:MIDO_0000074 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_00112 ;
-                 obo:IAO_0000115 "A primary (dimorphic) fungal infectious disease, also known as Penicilliosis, is a fungal infectious disease caused by Talaromyces marneffei, a dimorphic fungus." ;
-                 obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 obo:IAO_0000119 "https://www.cdc.gov/talaromycosis/about/index.html" ;
-                 rdfs:comment "It only affects people who live in or visit Southeast Asia, southern China, or eastern India. Most people who get talaromycosis have a medical condition that weakens their immune system, such as HIV/AIDS, or another condition that lowers the body’s ability to fight germs and sickness. Bumps on the skin are a common symptom. These bumps are usually small and painless. The bumps usually appear on the face and neck but can also appear in other places on the body." ;
-                 rdfs:label "talaromycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0000101
-obo:MIDO_0000101 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_0000005 ;
-                 obo:IAO_0000115 "A fungal infectious disease that affects the outer layers of the skin, hair, or nails." ;
-                 obo:IAO_0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" ,
-                                 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                 obo:IAO_0000119 "https://doi.org/10.31128/AJGP-05-19-4930" ;
-                 rdfs:label "superficial fungal infectious disease" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000102
-obo:MIDO_000102 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_0000101 ;
-                obo:IAO_0000115 "A superficial fungal infectious disease that affects keratinized tissues such as the outer layers of the skin, hair, or nails. It is often referred to as \"ringworm\" due to its ring-like appearance." ;
-                obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                obo:IAO_0000119 "https://doi.org/10.31128/AJGP-05-19-4930" ;
-                rdfs:label "tinea infectious disease" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000103
-obo:MIDO_000103 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_000102 ;
-                obo:IAO_0000115 "A tinea infectious disease that primarily affects the scalp and hair follicles." ;
-                obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                obo:IAO_0000119 "https://doi.org/10.31128/AJGP-05-19-4930" ;
-                rdfs:label "tinea capitis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000104
-obo:MIDO_000104 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_000102 ;
-                obo:IAO_0000115 "A tinea infectious disease that affects the skin on areas of the body other than the scalp, hands, feet, or groin." ;
-                obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                obo:IAO_0000119 "https://doi.org/10.31128/AJGP-05-19-4930" ;
-                rdfs:label "tinea corporis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000105
-obo:MIDO_000105 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_000102 ;
-                obo:IAO_0000115 "A tinea infectious disease that affects the groin area. It is commonly known as \"jock itch.\"" ;
-                obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                obo:IAO_0000119 "https://doi.org/10.31128/AJGP-05-19-4930" ;
-                rdfs:label "tinea cruris" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000106
-obo:MIDO_000106 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_000102 ;
-                obo:IAO_0000115 "A tinea infectious disease that affects the feet. It is also known as \"athlete's foot\"." ;
-                obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                obo:IAO_0000119 "https://doi.org/10.31128/AJGP-05-19-4930" ;
-                rdfs:label "tinea pedis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000107
-obo:MIDO_000107 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_000102 ;
-                obo:IAO_0000115 "A tinea infectious disease that affects the nails." ;
-                obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                obo:IAO_0000119 "https://doi.org/10.31128/AJGP-05-19-4930" ;
-                rdfs:label "tinea unguium" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000108
-obo:MIDO_000108 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_0000005 ;
-                obo:IAO_0000115 "A fungal infectious disease that generally affects tissues in and beneath the skin." ;
-                obo:IAO_0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" ,
-                                "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                rdfs:label "subcutaneous fungal infectious disease" ;
-                <http://www.w3.org/2004/02/skos/core#closeMatch> "https://doi.org/10.1111/j.1396-0296.2004.04056.x" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000109
-obo:MIDO_000109 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_0000005 ;
-                obo:IAO_0000115 "A fungal infectious disease that affects multiple organs or tissues in the body due to the spread of the infectious agent in blood." ;
-                obo:IAO_0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" ,
-                                "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                obo:IAO_0000119 "https://doi.org/10.2165/00003495-200161001-00001" ;
-                rdfs:label "systemic fungal infectious disease" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_000116
-obo:MIDO_000116 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_00128 ;
-                obo:IAO_0000115 "A candidiasis disease that is caused by an immune system defect that leads to an impaired response to Candida species, especially Candida albicans." ;
-                obo:IAO_0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" ,
-                                "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-                rdfs:comment "It is a rare, persistent fungal infection. It primarily affects the skin, nails, and mucous membranes, such as the mouth and genital areas, causing recurrent or chronic infections." ;
-                rdfs:label "chronic mucocutaneous candidiasis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0004006
-obo:MIDO_0004006 rdf:type owl:Class ;
-                 owl:equivalentClass [ rdf:type owl:Class ;
-                                       owl:unionOf ( [ owl:intersectionOf ( obo:MIDO_00131
-                                                                            [ rdf:type owl:Class ;
-                                                                              owl:unionOf ( <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                                            [ rdf:type owl:Restriction ;
-                                                                                              owl:onProperty obo:IDO_0000664 ;
-                                                                                              owl:someValuesFrom obo:MONDO_0000254
-                                                                                            ]
-                                                                                          )
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:BFO_0000062 ;
-                                                       owl:someValuesFrom obo:MONDO_0000256
-                                                     ]
-                                                   )
-                                     ] ,
-                                     [ rdf:type owl:Class ;
-                                       owl:unionOf ( [ owl:intersectionOf ( obo:MIDO_00131
-                                                                            [ rdf:type owl:Class ;
-                                                                              owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                              owl:onProperty obo:IDO_0000664 ;
-                                                                                              owl:someValuesFrom obo:MONDO_0000254
-                                                                                            ]
-                                                                                            [ rdf:type owl:Restriction ;
-                                                                                              owl:onProperty obo:IDO_0000664 ;
-                                                                                              owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000006>
-                                                                                            ]
-                                                                                          )
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty obo:BFO_0000062 ;
-                                                       owl:someValuesFrom obo:MONDO_0000256
-                                                     ]
-                                                   )
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_00131 ;
-                 obo:IAO_0000115 "An aspergillosis that is caused by Aspergillus entering the body through a break in the skin (for example, after surgery or a burn wound) and causes infection, usually in people who have weakened immune systems." ;
-                 obo:IAO_0000119 "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC105285/" ;
-                 rdfs:comment "Cutaneous aspergillosis can also occur if invasive aspergillosis spreads to the skin from somewhere else in the body, such as the lungs." ;
-                 rdfs:label "cutaneous aspergillosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_0004012
-obo:MIDO_0004012 rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( obo:MIDO_00128
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty obo:IDO_0000664 ;
-                                                              owl:someValuesFrom obo:MONDO_0000256
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_00128 ;
-                 obo:IAO_0000115 "A candidiasis disease that can affect the blood, heart, brain, eyes, bones, and other parts of the body." ;
-                 oboInOwl:hasRelatedSynonym "Candidemia" ;
-                 rdfs:comment "Candidemia, a bloodstream infection with Candida, is a common infection in hospitalized patients." ;
-                 rdfs:label "invasive candidiasis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00110
-obo:MIDO_00110 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_000108 ;
-               obo:IAO_0000115 "A subcutaneous fungal infectious disease that affects the skin and subcutaneous tissues." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:label "chromoblastomycosis" ;
-               <http://www.w3.org/2004/02/skos/core#closeMatch> "https://pubmed.ncbi.nlm.nih.gov/29261968/" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00111
-obo:MIDO_00111 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_000109 ;
-               obo:IAO_0000115 "A systemic fungal infectious disease that occurs in individuals with weakened or compromised immune systems." ;
-               obo:IAO_0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"\"" ,
-                               "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1111/1469-0691.12800" ;
-               rdfs:label "opportunistic fungal infectious disease" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00112
-obo:MIDO_00112 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_000109 ;
-               obo:IAO_0000115 "A systemic fungal infectious disease caused by dimorphic fungi that have the ability to exist in two different forms depending on environmental conditions." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1371/journal.ppat.1004608" ;
-               rdfs:comment "These fungi typically exist in a mold form in the environment and switch to a yeast or yeast-like form when they enter the human body, which allows them to invade and infect tissues, even in healthy individuals with no immunocompromised state" ;
-               rdfs:label "primary (dimorphic) fungal infectious disease" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00113
-obo:MIDO_00113 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00112 ;
-               obo:IAO_0000115 "A primary (dimorphic) fungal infectious disease caused by the inhalation of spores of the fungus Histoplasma capsulatum, commonly found in soil enriched with bird or bat droppings. This infection primarily affects the lungs but can spread to other organs in severe cases or immunocompromised individuals." ;
-               obo:IAO_0000117 "Sydney Cohen" ,
-                               "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "More info: https://doi.org/10.1007/82_2018_114" ;
-               rdfs:label "histoplasmosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00115
-obo:MIDO_00115 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00128 ;
-               obo:IAO_0000115 "A candidiasis disease that is caused by the Candida species through blood stream, most commonly Candida albicans." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:comment "Although other species like Candida glabrata and Candida auris can also be involved.  It can occur as a result of catheter use, abdominal surgery, antibiotic therapy, or from an overgrowth of Candida in the gut that translocates to the bloodstream. This condition can lead to serious complications as the fungus can spread to various organs such as the heart, brain, eyes, bones, and kidneys, causing severe infections." ;
-               rdfs:label "candidemia" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00116
-obo:MIDO_00116 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00112 ;
-               obo:IAO_0000115 "A primary (dimorphic) fungal infectious disease caused by Paracoccidioides brasiliensis. The infection typically enters the body through inhalation of fungal spores and primarily affects the lungs, but can spread to other organs." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1128/cmr.00233-21" ;
-               rdfs:label "paracoccidioidomycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00117
-obo:MIDO_00117 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00128 ;
-               obo:IAO_0000115 "A candidiasis disease that is caused by the yeast Candida auris." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:comment "This is a serious, emerging fungal infection and also concerning because it is often resistant to multiple antifungal drugs, making it difficult to treat." ;
-               rdfs:label "candida auris infection" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00118
-obo:MIDO_00118 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00140 ;
-               obo:IAO_0000115 "A coccidioidomycosis that occurs when the Coccidioides fungi are inhaled into the lungs." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1055/s-2008-1063855" ;
-               rdfs:comment "This condition is caused by exposure to airborne fungal spores from Coccidioides immitis or Coccidioides posadasii." ;
-               rdfs:label "primary pulmonary coccidioidomycosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00119
-obo:MIDO_00119 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00140 ;
-               obo:IAO_0000115 "A coccidioidomycosis that occurs when the Coccidioides fungi, which initially infect the lungs, spread through the bloodstream to other parts of the body." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.3201/eid1101.040613" ;
-               oboInOwl:hasRelatedSynonym "Valley fever" ;
-               rdfs:label "disseminated coccidioidomycosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00120
-obo:MIDO_00120 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00141 ;
-               obo:IAO_0000115 "A cryptococcosis caused by Cryptococcus neoformans, primarily affecting individuals with weakened immune systems, such as those with HIV/AIDS or undergoing immunosuppressive therapies." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:comment "The infection typically starts in the lungs after inhaling fungal spores, but it can spread to the brain, leading to a severe form of meningitis called cryptococcal meningitis." ;
-               rdfs:label "cryptococcus neoformans cryptococcosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00121
-obo:MIDO_00121 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00141 ;
-               obo:IAO_0000115 "A cryptococcosis of the lungs caused by Cryptococcus species, primarily Cryptococcus neoformans and Cryptococcus gattii." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:comment "This infection typically occurs when fungal spores are inhaled, leading to infection in the lungs." ;
-               rdfs:label "pulmonary cryptococcosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00122
-obo:MIDO_00122 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00143 ;
-               obo:IAO_0000115 "A fungal eye infectious disease that affects the cornea, the transparent, front part of the eye." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:comment "This condition leads to corneal ulcers, inflammation, pain, redness, blurred vision, and in severe cases, can result in corneal scarring or blindness if not treated effectively." ;
-               rdfs:label "fungal keratitis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00123
-obo:MIDO_00123 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00143 ;
-               obo:IAO_0000115 "A fungal eye infectious disease that affects the conjunctiva, the thin, transparent layer covering the white part of the eye and the inside of the eyelids." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:label "fungal conjuctivitis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00124
-obo:MIDO_00124 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00112 ;
-               obo:IAO_0000115 "A primary (dimorphic) fungal infectious disease caused by Sporothrix species, most commonly Sporothrix schenckii. It primarily affects the skin but can spread to other tissues, especially in immunocompromised individuals." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1016/j.mmcr.2016.04.001" ;
-               oboInOwl:hasRelatedSynonym "rose gardener’s disease" ;
-               rdfs:comment "can also be caused by sporothrix brasiliensis fungus" ;
-               rdfs:label "sporotrichosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00125
-obo:MIDO_00125 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00113 ;
-               obo:IAO_0000115 "A histoplasmosis that occurs when Histoplasma capsulatum, a fungus commonly found in soil, spreads from the lungs to other organs via the bloodstream." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:comment "This form of histoplasmosis can affect multiple organ systems, including the liver, spleen, lymph nodes, bone marrow, skin, and central nervous system." ;
-               rdfs:label "disseminated histoplasmosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00126
-obo:MIDO_00126 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00116 ;
-               obo:IAO_0000115 "A paracoccidioidomycosis that primarily affects the lungs and typically adults, but it can also spread to other parts of the body like the skin, lymph nodes, and mucous membranes." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1016/j.jemermed.2018.04.034" ;
-               rdfs:comment "It affects particularly men involved in rural or agricultural work in endemic areas such as Brazil and other parts of South America. It is a progressive, systemic fungal infection caused by Paracoccidioides species (P. brasiliensis and P. lutzii)." ;
-               rdfs:label "chronic paracoccidioidomycosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00127
-obo:MIDO_00127 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00116 ;
-               obo:IAO_0000115 "A paracoccidioidomycosis that is caused by Paracoccidioides species. It progresses much faster than the chronic form, with symptoms developing over weeks to months." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1111/myc.12984" ;
-               rdfs:comment "Unlike the chronic form, which mainly affects adults, this form often occurs in younger individuals, including children and adolescents. It is characterized by a more rapid onset and affects more organs and systems in the body." ;
-               rdfs:label "acute/subacute paracoccidioidomycosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00128
-obo:MIDO_00128 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00124 ;
-               obo:IAO_0000115 "An opportunistic fungal infectious disease caused by yeasts from the genus Candida, most commonly Candida albicans."@en ;
-               obo:IAO_0000117 "Albert Goldfain" ,
-                               "Alexander Diehl" ,
-                               "Lindsay Cowell" ,
-                               "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" ,
-                               "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.3390/microorganisms8060857" ;
-               rdfs:comment "Candidiasis can affect various parts of the body and presents in different forms, depending on the location and the individual's immune status." ,
-                            "moved original placement of candidiasis in IDO to reflect that candidiasis is the disease, with an infection as its material basis" ;
-               rdfs:label "candidiasis disease" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00129
-obo:MIDO_00129 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00128 ;
-               obo:IAO_0000115 "A candidiasis disease that results in esophagitis." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://www.ncbi.nlm.nih.gov/books/NBK537268/" ;
-               rdfs:label "esophageal candidiasis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00130
-obo:MIDO_00130 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( obo:MIDO_00128
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty obo:IDO_0000664 ;
-                                                            owl:someValuesFrom obo:MONDO_0000254
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf obo:MIDO_00128 ;
-               obo:IAO_0000115 "A candidiasis disease that involves fungal infection of the vaginal mucous membranes in women caused by Candida albicans. The symptoms can include intense vulval pruritus, burning, erythema and dyspareunia associated with a creamy white, curd-like discharge." ;
-               oboInOwl:hasRelatedSynonym "thrush" ;
-               rdfs:comment "Candida normally lives on the skin and inside the body, in places such as the mouth, throat, gut, and vagina, without causing any problems. Candida can multiply and cause an infection if the environment inside the mouth, throat, or esophagus changes in a way that encourages fungal growth." ;
-               rdfs:label "vaginal candidiasis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00131
-obo:MIDO_00131 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00111 ;
-               obo:IAO_0000115 "An opportunistic fungal infectious disease caused by fungi of the Aspergillus species that affects the skin, ears, nasal sinuses, and lungs of people with suppressed immune systems." ;
-               obo:IAO_0000117 "Sydney Cohen" ,
-                               "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://www.mayoclinic.org/diseases-conditions/aspergillosis/symptoms-causes/syc-20369619" ;
-               rdfs:comment "A fungal infectious disease that occurs most often in the skin, ears, nasal sinuses, and lungs of people with suppressed immune systems." ;
-               rdfs:label "aspergillosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00132
-obo:MIDO_00132 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00111 ;
-               obo:IAO_0000115 "An opportunistic fungal infectious disease caused by Blastomyces dermatitidis. The infection typically occurs through the inhalation of fungal spores found in moist soil, decaying wood, or leaves." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1016/j.ccm.2017.04.006" ;
-               rdfs:comment "Although blastomycosis is especially dangerous for those with weak immune systems, most people diagnosed with blastomycosis have healthy immune systems." ;
-               rdfs:label "blastomycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00136
-obo:MIDO_00136 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00132 ;
-               obo:IAO_0000115 "A blastomycosis that is caused by Blastomyces dermatitidis, primarily affecting the skin." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1001/jamadermatol.2022.3151" ;
-               rdfs:comment "This form of blastomycosis usually occurs as a result of the fungus spreading from the lungs to the skin." ;
-               rdfs:label "cutaneous blastomytcosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00137
-obo:MIDO_00137 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00132 ;
-               obo:IAO_0000115 "A blastomycosis primarily affecting the lungs and is caused by Blastomyces dermatitidis fungus." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.53347/rID-25905" ;
-               rdfs:comment "The infection occurs when an individual inhales spores of Blastomyces, typically found in soil, decaying vegetation, and other organic matter." ;
-               rdfs:label "pulmonary blastomycosis" .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00140
-obo:MIDO_00140 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00111 ;
-               obo:IAO_0000115 "An opportunistic fungal infectious disease also known as Valley Fever, is a fungal infectious disease caused by inhaling the spores of the fungi Coccidioides immitis or Coccidioides posadasii and primarily affecting lungs." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://emedicine.medscape.com/article/215978-overview?form=fpf" ;
-               oboInOwl:hasRelatedSynonym "San Joaquin Valley fever" ,
-                                          "desert rheumatism" ;
-               rdfs:label "coccidioidomycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00141
-obo:MIDO_00141 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00111 ;
-               obo:IAO_0000115 "An opportunistic fungal infectious disease caused by fungi in the Cryptococcus genus, primarily Cryptococcus neoformans and Cryptococcus gattii." ;
-               obo:IAO_0000119 "https://doi.org/10.1016/j.idc.2015.10.006" ;
-               rdfs:comment "It commonly affects individuals with weakened immune systems, such as those with HIV/AIDS, but can also occur in otherwise healthy individuals." ;
-               rdfs:label "cryptococcosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00143
-obo:MIDO_00143 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00111 ;
-               obo:IAO_0000115 "An opportunistic fungal infectious disease that affect the eyes, caused by species like Fusarium or Aspergillus." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               rdfs:label "fungal eye infectious disease"@en .
-
-
-###  http://purl.obolibrary.org/obo/MIDO_00145
-obo:MIDO_00145 rdf:type owl:Class ;
-               rdfs:subClassOf obo:MIDO_00111 ;
-               obo:IAO_0000115 "An opportunistic fungal infectious disease that is caused by the yeast-like fungus Pneumocystis jirovecii. It primarily affects individuals with weakened immune systems, such as those with HIV/AIDS, cancer, organ transplants, or other immunosuppressive conditions." ;
-               obo:IAO_0000117 "https://orcid.org/0009-0003-7246-1252 \"Ram A.N.R. Challa\"" ;
-               obo:IAO_0000119 "https://doi.org/10.1055/s-0031-1295725" ;
-               oboInOwl:hasRelatedSynonym "pneumocystis jirovecii pneumonia" ;
-               rdfs:label "pneumocystis pneumonia"@en .
-
-
-###  http://purl.obolibrary.org/obo/MONDO_0000254
-obo:MONDO_0000254 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:NCIT_C3245 ;
-                  obo:IAO_0000412 "http://purl.obolibrary.org/obo/MONDO" ;
-                  oboInOwl:hasDefinition "A mycosis that involves the integument and its appendages, including hair and nails. Infection may involve the stratum corneum or deeper layers of the epidermis. [ https://www.ncbi.nlm.nih.gov/books/NBK7902 ]" ;
-                  oboInOwl:hasRelatedSynonym "dermatomycosis" ,
-                                             "dermatophyte infections" ,
-                                             "tinea" ;
-                  rdfs:label "cutaneous mycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MONDO_0000256
-obo:MONDO_0000256 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:NCIT_C3245 ;
-                  obo:IAO_0000412 "http://purl.obolibrary.org/obo/MONDO" ;
-                  oboInOwl:hasDefinition "A mycosis that involves the lungs, abdominal viscera, bones and or central nervous system. [ https://www.ncbi.nlm.nih.gov/books/NBK7902 ]" ;
-                  oboInOwl:hasExactSynonym "deep mycosis" ;
-                  rdfs:comment "Usually follow inhalation (or via or gastrointestinal tract or blood vessels) and may be subsequent to primary pulmonary infections" ;
-                  rdfs:label "systemic mycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/MONDO_0024268
-obo:MONDO_0024268 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:NCIT_C3245 ;
-                  obo:IAO_0000412 "http://purl.obolibrary.org/obo/MONDO" ;
-                  oboInOwl:hasDefinition "A mycosis that is limited to the stratum corneum and essentially elicits no inflammation. [ https://www.ncbi.nlm.nih.gov/books/NBK7902/ ]" ;
-                  rdfs:label "superficial mycosis"@en .
-
-
 ###  http://purl.obolibrary.org/obo/NCBITaxon_10239
 obo:NCBITaxon_10239 rdf:type owl:Class ;
                     rdfs:subClassOf obo:OBI_0100026 ;
@@ -9420,128 +9060,11 @@ obo:NCBITaxon_2759 rdf:type owl:Class ;
                    rdfs:label "Eukaryota" .
 
 
-###  http://purl.obolibrary.org/obo/NCBITaxon_33154
-obo:NCBITaxon_33154 rdf:type owl:Class ;
-                    rdfs:subClassOf obo:NCBITaxon_2759 ;
-                    obo:IAO_0000116 "changed label to lowercase per best practice" ;
-                    obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCBITaxon" ;
-                    rdfs:label "opisthokonta"@en .
-
-
-###  http://purl.obolibrary.org/obo/NCBITaxon_4751
-obo:NCBITaxon_4751 rdf:type owl:Class ;
-                   rdfs:subClassOf obo:NCBITaxon_33154 ;
-                   obo:IAO_0000116 "changed fungi to fungus per best practice" ;
-                   obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCBITaxon" ;
-                   oboInOwl:hasRelatedSynonym "fungi" ,
-                                              "mycota" ;
-                   rdfs:label "fungus"@en .
-
-
 ###  http://purl.obolibrary.org/obo/NCBITaxon_9606
 obo:NCBITaxon_9606 rdf:type owl:Class ;
                    rdfs:subClassOf obo:NCBITaxon_2759 ;
                    obo:IAO_0000412 obo:ncbitaxon.owl ;
                    rdfs:label "Homo sapiens" .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C128362
-obo:NCIT_C128362 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:NCBITaxon_4751 ;
-                 obo:IAO_0000116 "changed label to singular dimorphic fungus per best practices" ;
-                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                 oboInOwl:hasDefinition "A fungus that grows as either a yeast or a mold. [ NCI ]" ;
-                 oboInOwl:hasRelatedSynonym "dimorphic fungi" ;
-                 rdfs:label "dimorphic fungus"@en .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C14286
-obo:NCIT_C14286 rdf:type owl:Class ;
-                rdfs:subClassOf obo:NCBITaxon_4751 ;
-                obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                oboInOwl:hasDefinition "A fungus that is single celled and has little to no mycelium development. Any of various single-celled ascomycetes, basidiomycetes and imperfect fungi with little or no mycelium development that asexually reproduce by budding. They ferment sugars to produce alcohol and carbon dioxide." ;
-                rdfs:comment "A non-taxonomic grouping of fungi that are single-celled." ,
-                             "Alt defintion: Various single-celled members of the fungal families, ascomycetes, basidiomycetes and imperfect fungi that tend to be unicellular for the greater part of their life cycle. [ from On-line Medical Dictionary NCI ]" ;
-                rdfs:label "yeast"@en .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C162141
-obo:NCIT_C162141 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_00131 ;
-                 obo:IAO_0000115 "An aspergillosis that is characterized by the presence of septate, acute, branching hyphae invading lung tissue." ;
-                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                 rdfs:comment "Occurs when Aspergillus causes a serious infection, and usually affects people who have weakened immune systems, such as people who have had an organ transplant or a stem cell transplant. Invasive aspergillosis most commonly affects the lungs, but it can also spread to other parts of the body." ;
-                 rdfs:label "invasive aspergillosis" .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C174113
-obo:NCIT_C174113 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:MIDO_00141 ;
-                 obo:IAO_0000115 "A cryptococcosis that is characterized by a blood borne fungal infection of the membranes surrounding the brain and spinal column (meninges). Caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]" ;
-                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                 oboInOwl:hasDefinition "A Cryptococcus that affects the membranes surrounding the brain and spinal column (meninges). It is a blood borne fungal infection caused by Cryptococcus, usually C. neoformans or C. gattii. It usually occurs in immunocompromised patients including persons with AIDS, transplant recipients, patients receiving cytotoxic chemotherapy, and patients with hematologic malignancies. [ NCI ]" ;
-                 rdfs:label "cryptococcal meningitis"@en .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C186432
-obo:NCIT_C186432 rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( obo:MIDO_00131
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty obo:IDO_0000664 ;
-                                                              owl:someValuesFrom obo:IDO_0000628
-                                                            ]
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty obo:IDO_0000664 ;
-                                                              owl:someValuesFrom obo:MONDO_0000256
-                                                            ]
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty obo:IDO_0000664 ;
-                                                              owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0004013>
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
-                 rdfs:subClassOf obo:MIDO_00131 ;
-                 obo:IAO_0000115 "An aspergillosis resulting in a chronic infectious disease course affecting the lungs." ;
-                 obo:IAO_0000119 "http://purl.obolibrary.org/obo/NCIT" ;
-                 rdfs:comment "Occurs when Aspergillus infection causes cavities in the lungs, and can be a long-term (3 months or more) condition. One or more fungal balls (aspergillomas) may also be present in the lungs.  It is characterized by the slow progression of lung damage over months to years and is associated with symptoms such as chronic cough, fatigue, weight loss, and shortness of breath." ;
-                 rdfs:label "chronic pulmonary aspergillosis" .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C28266
-obo:NCIT_C28266 rdf:type owl:Class ;
-                rdfs:subClassOf obo:NCBITaxon_4751 ;
-                obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-                oboInOwl:hasDefinition "A fungus that is multicellular and produces filaments and hyphae." ;
-                rdfs:comment "A non-taxonomic grouping of fungi that grow in the form of mycelium of hyphae (vegetative filaments)." ;
-                rdfs:label "mold"@en .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C3245
-obo:NCIT_C3245 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( obo:IDO_0000586
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty obo:BFO_0000051 ;
-                                                            owl:someValuesFrom <http://www.co-ode.org/ontologies/MIDO_0000001>
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf obo:IDO_0000586 ;
-               obo:IAO_0000412 "http://purl.obolibrary.org/obo/NCIT" ;
-               oboInOwl:hasDefinition "An infection that is caused by a fungus. [ NCI ]" ;
-               oboInOwl:hasExactSynonym "fungal infection" ;
-               rdfs:label "mycosis"@en .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C84547
-obo:NCIT_C84547 rdf:type owl:Class ;
-                rdfs:subClassOf obo:MIDO_0000008 ;
-                obo:IAO_0000115 "An allergic aspergillosis that primarily affects patients suffering from asthma or cystic fibrosis." ;
-                obo:IAO_0000119 "http://purl.obolibrary.org/obo/NCIT" ;
-                rdfs:comment "Characterized by the presence of septate, acute, branching hyphae invading lung tissue.Occurs when Aspergillus causes a serious infection, and usually affects people who have weakened immune systems, such as people who have had an organ transplant or a stem cell transplant. Invasive aspergillosis most commonly affects the lungs, but it can also spread to other parts of the body." ,
-                             "Occurs when Aspergillus causes inflammation in the lungs and allergy symptoms such as coughing and wheezing, but doesn’t necessarily cause an infection" ;
-                rdfs:label "allergic bronchopulmonary aspergillosis"@en .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0100026
@@ -9636,535 +9159,14 @@ obo:UBERON_0035944 rdf:type owl:Class ;
                    rdfs:label "life-death temporal boundary" .
 
 
-###  http://www.co-ode.org/ontologies/MIDO_0000001
-<http://www.co-ode.org/ontologies/MIDO_0000001> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCBITaxon_4751
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty obo:RO_0000091 ;
-                                                                                             owl:someValuesFrom obo:IDO_0000450
-                                                                                           ]
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:IDO_0000528 ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                oboInOwl:hasDefinition "A fungus that has an infectious disposition" ;
-                                                rdfs:label "fungal infectious agent"@en .
+###  http://www.geneontology.org/formats/oboInOwl#DbXref
+oboInOwl:DbXref rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000102 .
 
 
-###  http://www.co-ode.org/ontologies/MIDO_00000019
-<http://www.co-ode.org/ontologies/MIDO_00000019> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000018> ;
-                                                 obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1189319.08FU" ;
-                                                 rdfs:label "candida albicans"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000002
-<http://www.co-ode.org/ontologies/MIDO_0000002> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000001>
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty obo:RO_0000091 ;
-                                                                                             owl:someValuesFrom obo:IDO_0000406
-                                                                                           ]
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000001> ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                oboInOwl:hasDefinition "A fungal infectious agent that usually has an opportunistic infectious disposition." ;
-                                                rdfs:comment "may include fungi that exist normally in healthy human flora, that have the capacity to cause infection" ;
-                                                rdfs:label "opportunistic fungal pathogen"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000003
-<http://www.co-ode.org/ontologies/MIDO_0000003> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000001>
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty obo:RO_0000091 ;
-                                                                                             owl:someValuesFrom obo:IDO_0000407
-                                                                                           ]
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:IDO_0000530 ,
-                                                                <http://www.co-ode.org/ontologies/MIDO_0000001> ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                oboInOwl:hasDefinition "A fungal infectious agent that usually has a primary infectious disposition." ;
-                                                rdfs:comment "may cause infection in both immunocompromised and immunocompetent people" ;
-                                                rdfs:label "primary fungal pathogen"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000006
-<http://www.co-ode.org/ontologies/MIDO_0000006> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:NCIT_C3245 ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                oboInOwl:hasDefinition "A mycosis that results in infection located in skin or located in subcutaneous tissue, which penetrate the dermis or even deeper during or after a skin trauma." ;
-                                                oboInOwl:hasRelatedSynonym "http://purl.obolibrary.org/obo/DOID_0050135" ;
-                                                rdfs:label "subcutaneous mycosis"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000011
-<http://www.co-ode.org/ontologies/MIDO_0000011> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000035> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1160519.08FU" ;
-                                                rdfs:label "aspergillus fumigatus"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000012
-<http://www.co-ode.org/ontologies/MIDO_0000012> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:IDO_0000445 ;
-                                                obo:IAO_0000119 "https://www.cdc.gov/fungal/antifungal-resistance.html" ;
-                                                oboInOwl:hasDefinition "A resistance to antifungal drugs that mitigates the damaging effects of antifungal treatments." ;
-                                                rdfs:comment "Occurs when fungi develop the ability to defeat the drugs designed to kill them.  These antifungal resistant fungi no longer respond to antifungal drugs." ;
-                                                rdfs:label "antifungal resistance"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000014
-<http://www.co-ode.org/ontologies/MIDO_0000014> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH385070.07FU" ;
-                                                rdfs:label "blastomyces dermatitidis"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000018
-<http://www.co-ode.org/ontologies/MIDO_0000018> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH033417" ;
-                                                rdfs:label "candida"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000020
-<http://www.co-ode.org/ontologies/MIDO_0000020> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000018> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1213468.08FU" ;
-                                                rdfs:comment """Concern is rising over the emerging fungus Candida auris, which is rare in most areas of the United States but is a growing threat. Resistance rates for C. auris are much higher than for other Candida species, with:
-About 90% of U.S. C. auris samples being resistant to fluconazole, and
-Up to one-third are resistant to the antifungal drug amphotericin B
-source: doi: 10.1093/cid/ciw691""" ;
-                                                rdfs:label "candida auris"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000021
-<http://www.co-ode.org/ontologies/MIDO_0000021> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH031014" ;
-                                                rdfs:label "coccidioides"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000026
-<http://www.co-ode.org/ontologies/MIDO_0000026> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000035> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1165051.08FU" ;
-                                                rdfs:label "aspergillus flavus"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000028
-<http://www.co-ode.org/ontologies/MIDO_0000028> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                           obo:NCIT_C14286
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C14286 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH034644" ;
-                                                rdfs:comment """predominantly found as a yeast, though some researchers believe it important to understant cryptococcus as a dimorphic fungi, as it does switch from yeast growth to hyphal growth during its sexual cycle
-source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/""" ;
-                                                rdfs:label "cryptococcus"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000029
-<http://www.co-ode.org/ontologies/MIDO_0000029> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000028>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000028> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH396686.07FU" ;
-                                                rdfs:comment "source for primary fungal pathogen classification: https://www.ncbi.nlm.nih.gov/books/NBK431060/" ;
-                                                rdfs:label "cryptococcus gatti"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000030
-<http://www.co-ode.org/ontologies/MIDO_0000030> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000028>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000028> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1178825.08FU" ;
-                                                rdfs:comment "source for opportunistic fungal pathogen classification: https://www.ncbi.nlm.nih.gov/books/NBK431060/" ;
-                                                rdfs:label "cryptococcus neoformans"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000035
-<http://www.co-ode.org/ontologies/MIDO_0000035> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C28266
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH030957" ;
-                                                rdfs:label "aspergillus"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000041
-<http://www.co-ode.org/ontologies/MIDO_0000041> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH035107" ;
-                                                rdfs:label "rhizopus"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000042
-<http://www.co-ode.org/ontologies/MIDO_0000042> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH035093" ;
-                                                rdfs:label "mucor"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000044
-<http://www.co-ode.org/ontologies/MIDO_0000044> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C28266
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH035079" ;
-                                                rdfs:label "rhizomucor"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000045
-<http://www.co-ode.org/ontologies/MIDO_0000045> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH035111" ;
-                                                rdfs:label "syncephalastrum"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000046
-<http://www.co-ode.org/ontologies/MIDO_0000046> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH035085" ;
-                                                rdfs:label "apophysomyces"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000047
-<http://www.co-ode.org/ontologies/MIDO_0000047> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH035078" ;
-                                                rdfs:label "lichtheimia"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000062
-<http://www.co-ode.org/ontologies/MIDO_0000062> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C28266
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ,
-                                                                <http://www.co-ode.org/ontologies/MIDO_0000086> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1331956.08FU" ;
-                                                rdfs:label "madurella mycetomatis"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000064
-<http://www.co-ode.org/ontologies/MIDO_0000064> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C28266
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ,
-                                                                <http://www.co-ode.org/ontologies/MIDO_0004002> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH349490.07FU" ;
-                                                oboInOwl:hasRelatedSynonym "formerly known as Pseudallescheria boydii" ;
-                                                rdfs:label "scedosporium boydii"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000066
-<http://www.co-ode.org/ontologies/MIDO_0000066> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C14286
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C14286 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1159131.08FU" ;
-                                                rdfs:label "pneumocystis jirovecii"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000067
-<http://www.co-ode.org/ontologies/MIDO_0000067> rdf:type owl:Class ;
-                                                owl:equivalentClass [ rdf:type owl:Class ;
-                                                                      owl:unionOf ( [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                                                    [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                                                  )
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1821630.08FU" ;
-                                                rdfs:label "sporothrix schenckii"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000075
-<http://www.co-ode.org/ontologies/MIDO_0000075> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH031017" ;
-                                                rdfs:label "paracoccidioides"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000076
-<http://www.co-ode.org/ontologies/MIDO_0000076> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000075> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1178418.08FU" ;
-                                                rdfs:label "paracoccidioides brasiliensis"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000077
-<http://www.co-ode.org/ontologies/MIDO_0000077> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000075> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1412585.08FU" ;
-                                                rdfs:label "paracoccidioides lutzii"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000081
-<http://www.co-ode.org/ontologies/MIDO_0000081> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCBITaxon_4751
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000001>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ,
-                                                                    [ rdf:type owl:Class ;
-                                                                      owl:unionOf ( <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                    <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                  )
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCBITaxon_4751 ;
-                                                oboInOwl:hasDefinition "A heterogenous grouping of fungus (mostly mold, a few yeasts) that is chracterized by the presence of melanin in their cell walls that can cause a wide range of diseases including phaeohyphomycosis, chromoblastomycosis, and eumycotic mycetoma. These organisms are widespread in the environment, being found in soil, wood, and decomposing plant debris. Cutaneous, subcutaneous, and corneal infections with dematiaceous fungi occur worldwide, but are more common in tropical and subtropical climates. Infection results from traumatic implantation. Most cases occur in immunocompetent individuals. Dematiaceous moulds are also important causes of invasive sinusitis and allergic fungal sinusitis. Infection is thought to follow inhalation." ;
-                                                oboInOwl:hasRelatedSynonym "dematiaceous fungi" ;
-                                                rdfs:comment "more info: https://doi.org/10.1179/joc.2003.15.Supplement-2.36" ;
-                                                rdfs:label "dematiaceous fungus"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000082
-<http://www.co-ode.org/ontologies/MIDO_0000082> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1507445.08FU" ;
-                                                rdfs:label "neoscytalidium dimidiatum"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000083
-<http://www.co-ode.org/ontologies/MIDO_0000083> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0004002> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1192746.08FU" ;
-                                                rdfs:label "scedosporium prolificans"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000084
-<http://www.co-ode.org/ontologies/MIDO_0000084> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH030905" ;
-                                                rdfs:label "phialophora"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000086
-<http://www.co-ode.org/ontologies/MIDO_0000086> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH033035" ;
-                                                rdfs:label "madurella"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000088
-<http://www.co-ode.org/ontologies/MIDO_0000088> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1160224.08FU" ;
-                                                rdfs:label "fonsecaea pedrosoi"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000091
-<http://www.co-ode.org/ontologies/MIDO_0000091> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH030899" ;
-                                                rdfs:label "exophiala"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000092
-<http://www.co-ode.org/ontologies/MIDO_0000092> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1160231.08FU" ;
-                                                rdfs:label "cladophialophora bantiana"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000094
-<http://www.co-ode.org/ontologies/MIDO_0000094> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH030644" ;
-                                                rdfs:label "curvularia"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000095
-<http://www.co-ode.org/ontologies/MIDO_0000095> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH030641" ;
-                                                rdfs:label "bipolaris"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000096
-<http://www.co-ode.org/ontologies/MIDO_0000096> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH030639" ;
-                                                rdfs:label "alternaria"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000112
-<http://www.co-ode.org/ontologies/MIDO_0000112> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:IDO_0000560 ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                obo:IAO_0000119 "https://doi.org/10.3390/genes9090461" ;
-                                                oboInOwl:hasDefinition "Polyenes are a group of antifungals that directly bind to and remove the ergosterol present in the fungal cell membrane. This results in the loss of membrane permeability, subsequent membrane leakage, and eventually cell death. Structurally, polyenes are characterized by the presense of poly-unsaturated organic compounds that contain at least three alternating double and single carbon–carbon bonds. " ;
-                                                rdfs:comment "Four models of the polyene mode of antifungal action have been proposed: the pore forming model, the surface adsorption model, the sterol sponge model and the oxidative damage model. More info: https://doi.org/10.3390/jof6040321" ;
-                                                rdfs:label "polyene"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000113
-<http://www.co-ode.org/ontologies/MIDO_0000113> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:IDO_0000560 ;
-                                                obo:IAO_0000117 "Sydney Cohen" ;
-                                                obo:IAO_0000119 "https://doi.org/10.1016/0190-9622(90)70288-s" ,
-                                                                "https://www.merckvetmanual.com/pharmacology/antifungal-agents/allylamines" ;
-                                                oboInOwl:hasDefinition """Allylamines are a group of antifungals that inhibit ergosterol synthesis at the level of squalene epoxidase. 
-Their mechanism is competitive inhibition of squalene epoxidase, blocking conversion of squalene to lanosterol, leading to squaline accumulation and ergosterol depletion in the cell membrane.""" ;
-                                                rdfs:comment "These agents are highly selective for the fungal enzyme and have a minimal effect on mammalian cholesterol synthesis." ;
-                                                rdfs:label "allylamines"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000114
-<http://www.co-ode.org/ontologies/MIDO_0000114> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:IDO_0000560 ;
-                                                obo:IAO_0000119 "https://doi.org/10.3390/genes9090461" ;
-                                                oboInOwl:hasDefinition "Azoles are group of antifungals that function by targeting the cytochrome P450 enzyme-lanosterol 14α-demethylase, that converts lanosterol to ergosterol. Ergosterol is the main membrane sterol in most fungal species, holding an important role in controlling membrane fluidity. Effective azoles decrease membrane fluidity enough to inhibit cell growth. Azoles are heterocyclic compounds containing at least one nitrogen atom as part of the ring. " ;
-                                                rdfs:comment "excessive use of azoles for treatment and in agriculture is a contributor to increased antifungal resistance" ;
-                                                rdfs:label "azole"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000115
-<http://www.co-ode.org/ontologies/MIDO_0000115> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:IDO_0000560 ;
-                                                obo:IAO_0000119 "https://doi.org/10.3390/genes9090461" ;
-                                                oboInOwl:hasDefinition "Echinocandins are a group of antifungals that inhibit the biosynthesis of an essential component of the fungal cell wall, the 1,3-ß-glucan. Echinocandins are amphiphilic lipopeptides, and products of cyclopentamine. " ;
-                                                rdfs:label "echinocandin"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0000116
-<http://www.co-ode.org/ontologies/MIDO_0000116> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:IDO_0000560 ;
-                                                obo:IAO_0000119 "https://doi.org/10.3390/genes9090461" ;
-                                                oboInOwl:hasDefinition """Pyrimidine analogs are a group of antifungals that are nucleosides, that mimic the structure of natural pyrimidines. Some pyrimidine analogs have the potential to convert into 5-fluorouracyl and further to 5-fluorodeoxyuridine inside the fungal cell. Subsequently, 5-fluorodeoxyuridine interferes with DNA, RNA, and protein
-synthesis. The transformation of flucytosine into 5-fluorouracyl is catalyzed by the action of the fungal enzyme cytosine deaminase (encoded by the yeast gene FCY1), which is not present in humans. The only pyrimidine analog with antimycotic properties currently in use for human treatment is flucytosine. """ ;
-                                                rdfs:comment "Although it is one of the more effective and safest antimycotic in the health system, it is not used in monotherapy due to the rapid development of resistance towards this drug" ;
-                                                rdfs:label "pyrimidine analog"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0004001
-<http://www.co-ode.org/ontologies/MIDO_0004001> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1225764.08FU" ;
-                                                rdfs:label "sporothrix brasiliensis"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0004002
-<http://www.co-ode.org/ontologies/MIDO_0004002> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000081> ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH032948" ;
-                                                rdfs:label "scedosporium"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0004005
-<http://www.co-ode.org/ontologies/MIDO_0004005> rdf:type owl:Class ;
-                                                owl:equivalentClass [ rdf:type owl:Class ;
-                                                                      owl:unionOf ( <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                    [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                                                  )
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1178417.08FU" ;
-                                                rdfs:label "histoplasma capsulatum"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0004008
-<http://www.co-ode.org/ontologies/MIDO_0004008> rdf:type owl:Class ;
-                                                owl:equivalentClass [ rdf:type owl:Class ;
-                                                                      owl:unionOf ( <http://www.co-ode.org/ontologies/MIDO_0000003>
-                                                                                    [ owl:intersectionOf ( obo:NCIT_C28266
-                                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                                                  )
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C28266 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/TH032704" ;
-                                                rdfs:label "fusarium"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0004011
-<http://www.co-ode.org/ontologies/MIDO_0004011> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( obo:NCIT_C128362
-                                                                                           <http://www.co-ode.org/ontologies/MIDO_0000002>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf obo:NCIT_C128362 ;
-                                                obo:IAO_0000412 "UNITE Community https://dx.doi.org/10.15156/BIO/SH1150522.08FU" ;
-                                                oboInOwl:hasRelatedSynonym "used to be called penicillium marneffei" ;
-                                                rdfs:label "talaromyces marneffei"@en .
-
-
-###  http://www.co-ode.org/ontologies/MIDO_0004013
-<http://www.co-ode.org/ontologies/MIDO_0004013> rdf:type owl:Class ;
-                                                rdfs:subClassOf obo:IDO_0000504 ;
-                                                obo:IAO_0000119 """https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4531547/
-doi: 10.3904/kjim.2004.19.1.38""" ;
-                                                oboInOwl:hasDefinition "An aspergillosis that involves a ball of Aspergillus growing in the lungs or sinuses, but it usually does not spread to other parts of the body. Aspergilloma is also called a “fungus ball.”" ;
-                                                oboInOwl:hasExactSynonym "pulmonary aspergilloma" ;
-                                                rdfs:comment "usually develops in the patients with underlying lung diseases" ;
-                                                rdfs:label "aspergilloma"@en .
+###  http://www.geneontology.org/formats/oboInOwl#Definition
+oboInOwl:Definition rdf:type owl:Class ;
+                    rdfs:subClassOf obo:IAO_0000102 .
 
 
 ###  http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
@@ -10173,65 +9175,164 @@ oboInOwl:ObsoleteClass rdf:type owl:Class ;
                        rdfs:label "Obsolete Class" .
 
 
-###  http://www.orpha.net/ORDO/Orphanet_199323
-<http://www.orpha.net/ORDO/Orphanet_199323> rdf:type owl:Class ;
-                                            rdfs:subClassOf obo:MIDO_00143 ;
-                                            obo:IAO_0000115 "A fungal eye infectious disease that is characterized by inflammation involving the vitreous and/or aqueous humors, usually due to bacterial or fungal infection." ;
-                                            obo:IAO_0000119 "http://www.orpha.net/ORDO/Orphanet" ;
-                                            rdfs:comment "It is considered a rare ophthalmic disorder. It may arise endogenously from hematogenous spread of the infectious agent, or exogenously after direct inoculation, and can take an acute or chronic course. Clinical signs and symptoms include progressive vitritis, hypopyon, reduced or blurred vision, red eye, pain, and lid swelling. The condition may be complicated by panophthalmitis, corneal infiltration and perforation, affection of orbital structures, and phthisis bulbi." ;
-                                            rdfs:label "endophthalmitis"@en .
+###  http://www.geneontology.org/formats/oboInOwl#Subset
+oboInOwl:Subset rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000224
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#Synonym
+oboInOwl:Synonym rdf:type owl:Class ;
+                 rdfs:subClassOf obo:IAO_0000102 .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#SynonymType
+oboInOwl:SynonymType rdf:type owl:Class ;
+                     rdfs:subClassOf obo:IAO_0000102 .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000002
+obo:IAO_0000002 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                rdfs:label "example to be eventually removed"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000103
+obo:IAO_0000103 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                obo:IAO_0000115 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
+                obo:IAO_0000117 "Person:Alan Ruttenberg" ;
+                rdfs:label "failed exploratory term"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000120
-obo:IAO_0000120 rdf:type owl:NamedIndividual .
+obo:IAO_0000120 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
+                rdfs:label "metadata complete"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000121
-obo:IAO_0000121 rdf:type owl:NamedIndividual .
+obo:IAO_0000121 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
+                rdfs:label "organizational term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000122
-obo:IAO_0000122 rdf:type owl:NamedIndividual .
+obo:IAO_0000122 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
+                rdfs:label "ready for release"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000123
-obo:IAO_0000123 rdf:type owl:NamedIndividual .
+obo:IAO_0000123 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
+                rdfs:label "metadata incomplete"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000124
-obo:IAO_0000124 rdf:type owl:NamedIndividual .
+obo:IAO_0000124 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
+                rdfs:label "uncurated"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000125
-obo:IAO_0000125 rdf:type owl:NamedIndividual .
+obo:IAO_0000125 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
+                rdfs:label "pending final vetting"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000224
+obo:IAO_0000224 rdf:type owl:NamedIndividual ,
+                         oboInOwl:Subset ;
+                obo:IAO_0000115 "Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes."@en ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Melanie Courtot"@en ;
+                rdfs:label "core"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000226
-obo:IAO_0000226 rdf:type owl:NamedIndividual .
+obo:IAO_0000226 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                rdfs:label "placeholder removed"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000227
-obo:IAO_0000227 rdf:type owl:NamedIndividual .
+obo:IAO_0000227 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                obo:IAO_0000116 "An editor note should explain what were the merged terms and the reason for the merge."@en ;
+                rdfs:label "terms merged"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000228
-obo:IAO_0000228 rdf:type owl:NamedIndividual .
+obo:IAO_0000228 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                obo:IAO_0000116 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
+                rdfs:label "term imported"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000229
-obo:IAO_0000229 rdf:type owl:NamedIndividual .
+obo:IAO_0000229 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                obo:IAO_0000116 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
+                rdfs:label "term split"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000410
+obo:IAO_0000410 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000409 ;
+                obo:IAO_0000116 "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents." ;
+                obo:IAO_0000117 "Alan Ruttenberg" ;
+                obo:IAO_0000119 "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf" ;
+                rdfs:label "universal" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000420
+obo:IAO_0000420 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000409 ;
+                obo:IAO_0000115 "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal" ;
+                obo:IAO_0000116 "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal." ;
+                obo:IAO_0000117 "Alan Ruttenberg" ;
+                rdfs:label "defined class" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000421
+obo:IAO_0000421 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000409 ;
+                obo:IAO_0000115 "A named class expression is a logical expression that is given a name. The name can be used in place of the expression." ;
+                obo:IAO_0000116 "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions" ;
+                obo:IAO_0000117 "Alan Ruttenberg" ;
+                rdfs:label "named class expression" .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000423
-obo:IAO_0000423 rdf:type owl:NamedIndividual .
+obo:IAO_0000423 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "Terms with this status should eventually replaced with a term from another ontology."@en ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "to be replaced with external ontology term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000428
-obo:IAO_0000428 rdf:type owl:NamedIndividual .
+obo:IAO_0000428 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000115 "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "requires discussion"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0001901
