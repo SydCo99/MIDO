@@ -1,0 +1,34 @@
+name: Unite URL Check
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Run daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  run-url-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.13'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt # Ensure dependencies are listed here
+
+    - name: Run URL Check Script
+      run: |
+        python unite_url_check.py
+
+    - name: Upload Warning Log
+      uses: actions/upload-artifact@v3
+      with:
+        name: warning-log
+        path: failed_links.txt 
