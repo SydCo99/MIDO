@@ -1,0 +1,112 @@
+scedosporium boydii
+UNITE Community https://dx.doi.org/10.15156/BIO/SH349490.07FU
+http://www.co-ode.org/ontologies/MIDO_0000064
+
+paracoccidioides
+UNITE Community https://dx.doi.org/10.15156/BIO/TH031017
+http://www.co-ode.org/ontologies/MIDO_0000075
+
+phialophora
+UNITE Community https://dx.doi.org/10.15156/BIO/TH030905
+http://www.co-ode.org/ontologies/MIDO_0000084
+
+madurella
+UNITE Community https://dx.doi.org/10.15156/BIO/TH033035
+http://www.co-ode.org/ontologies/MIDO_0000086
+
+exophiala
+UNITE Community https://dx.doi.org/10.15156/BIO/TH030899
+http://www.co-ode.org/ontologies/MIDO_0000091
+
+curvularia
+UNITE Community https://dx.doi.org/10.15156/BIO/TH030644
+http://www.co-ode.org/ontologies/MIDO_0000094
+
+bipolaris
+UNITE Community https://dx.doi.org/10.15156/BIO/TH030641
+http://www.co-ode.org/ontologies/MIDO_0000095
+
+alternaria
+UNITE Community https://dx.doi.org/10.15156/BIO/TH030639
+http://www.co-ode.org/ontologies/MIDO_0000096
+
+scedosporium
+UNITE Community https://dx.doi.org/10.15156/BIO/TH032948
+http://www.co-ode.org/ontologies/MIDO_0004002
+
+rhizopus
+UNITE Community https://dx.doi.org/10.15156/BIO/TH035107
+http://www.co-ode.org/ontologies/MIDO_0000041
+
+mucor
+UNITE Community https://dx.doi.org/10.15156/BIO/TH035093
+http://www.co-ode.org/ontologies/MIDO_0000042
+
+rhizomucor
+UNITE Community https://dx.doi.org/10.15156/BIO/TH035079
+http://www.co-ode.org/ontologies/MIDO_0000044
+
+syncephalastrum
+UNITE Community https://dx.doi.org/10.15156/BIO/TH035111
+http://www.co-ode.org/ontologies/MIDO_0000045
+
+apophysomyces
+UNITE Community https://dx.doi.org/10.15156/BIO/TH035085
+http://www.co-ode.org/ontologies/MIDO_0000046
+
+lichtheimia
+UNITE Community https://dx.doi.org/10.15156/BIO/TH035078
+http://www.co-ode.org/ontologies/MIDO_0000047
+
+cryptococcus
+UNITE Community https://dx.doi.org/10.15156/BIO/TH034644
+http://www.co-ode.org/ontologies/MIDO_0000028
+
+cryptococcus gatti
+UNITE Community https://dx.doi.org/10.15156/BIO/SH396686.07FU
+http://www.co-ode.org/ontologies/MIDO_0000029
+
+cryptococcus neoformans
+UNITE Community https://dx.doi.org/10.15156/BIO/SH1178825.08FU
+http://www.co-ode.org/ontologies/MIDO_0000030
+
+fusarium
+UNITE Community https://dx.doi.org/10.15156/BIO/TH032704
+http://www.co-ode.org/ontologies/MIDO_0004008
+
+aspergillus fumigatus
+UNITE Community https://dx.doi.org/10.15156/BIO/SH1160519.08FU
+http://www.co-ode.org/ontologies/MIDO_0000011
+
+blastomyces dermatitidis
+UNITE Community https://dx.doi.org/10.15156/BIO/SH385070.07FU
+http://www.co-ode.org/ontologies/MIDO_0000014
+
+candida
+UNITE Community https://dx.doi.org/10.15156/BIO/TH033417
+http://www.co-ode.org/ontologies/MIDO_0000018
+
+coccidioides
+UNITE Community https://dx.doi.org/10.15156/BIO/TH031014
+http://www.co-ode.org/ontologies/MIDO_0000021
+
+cryptococcus
+UNITE Community https://dx.doi.org/10.15156/BIO/TH034644
+http://www.co-ode.org/ontologies/MIDO_0000028
+
+cryptococcus gatti
+UNITE Community https://dx.doi.org/10.15156/BIO/SH396686.07FU
+http://www.co-ode.org/ontologies/MIDO_0000029
+
+cryptococcus neoformans
+UNITE Community https://dx.doi.org/10.15156/BIO/SH1178825.08FU
+http://www.co-ode.org/ontologies/MIDO_0000030
+
+aspergillus
+UNITE Community https://dx.doi.org/10.15156/BIO/TH030957
+http://www.co-ode.org/ontologies/MIDO_0000035
+
+fusarium
+UNITE Community https://dx.doi.org/10.15156/BIO/TH032704
+http://www.co-ode.org/ontologies/MIDO_0004008
+
