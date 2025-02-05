@@ -9476,7 +9476,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/""" ;
                                                                     ] ;
                                                 rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000005> ;
                                                 obo:IAO_0000117 "Sydney Cohen" ;
-                                                obo:IAO_0000119 "World Health Organization: https://www.who.int/india/emergencies/coronavirus-disease-(covid-19)/mucormycosis" ;
+                                                obo:IAO_0000119 "World Health Organization: https://www.who.int/india/home/emergencies/coronavirus-disease-(covid-19)/mucormycosis" ;
                                                 oboInOwl:hasDefinition "Mucormycosis is a fungal infectious disease that is caused by a group of fungi called mucormycetes(previously called zygomycosis). It is a rare but serious angio-invasive infection. Clinical presentation is classified according to the organ involvement. It can be rhino-orbital cerebral, pulmonary, cutaneous, gastrointestinal, or disseminated." ;
                                                 oboInOwl:hasRelatedSynonym "zygomycosis (previous name)" ;
                                                 rdfs:comment "didn't import EFO:0007380, which also refers to mucormycosis, since that defintion mentions Zygomycota, a phylum of fungi that no longer exists" ;
@@ -9542,7 +9542,7 @@ source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318972/""" ;
                                                                     ] ;
                                                 rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000040> ;
                                                 obo:IAO_0000117 "Sydney Cohen" ;
-                                                obo:IAO_0000119 "https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html" ;
+                                                obo:IAO_0000119 "https://www.cdc.gov/mucormycosis/hcp/clinical-overview/index.html" ;
                                                 oboInOwl:hasDefinition "A mucormycosis that is in the sinuses and that can spread to the brain. This is most common in people with uncontrolled diabetes and in people who have had a kidney transplant." ;
                                                 oboInOwl:hasRelatedSynonym "sinus and brain mucormycosis" ;
                                                 rdfs:label "rhinocerebral mucormycosis"@en .
@@ -9632,7 +9632,7 @@ More info: doi: 10.21037/jtd.2017.02.31""" ;
                                                                     ] ;
                                                 rdfs:subClassOf <http://www.co-ode.org/ontologies/MIDO_0000040> ;
                                                 obo:IAO_0000117 "Sydney Cohen" ;
-                                                obo:IAO_0000119 "https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html" ;
+                                                obo:IAO_0000119 "https://www.cdc.gov/mucormycosis/hcp/clinical-overview/index.html" ;
                                                 oboInOwl:hasDefinition "A mucormycosis that spreads through the bloodstream to affect another part of the body. Disseminated mucormycosis most commonly affects the brain, but also can affect other organs such as the spleen, heart, and skin." ;
                                                 rdfs:label "disseminated mucormycosis"@en .
 
@@ -9948,7 +9948,7 @@ Bumps on the skin are a common symptom. These bumps are usually small and painle
                                                 rdfs:subClassOf obo:IDO_0000560 ;
                                                 obo:IAO_0000117 "Sydney Cohen" ;
                                                 obo:IAO_0000119 "https://doi.org/10.1016/0190-9622(90)70288-s" ,
-                                                                "https://www.merckvetmanual.com/pharmacology/antifungal-agents/allylamines" ;
+                                                                "https://www.merckvetmanual.com/pharmacology/antifungal-agents/allylamines-for-use-in-animals" ;
                                                 oboInOwl:hasDefinition """Allylamines are a group of antifungals that inhibit ergosterol synthesis at the level of squalene epoxidase. 
 Their mechanism is competitive inhibition of squalene epoxidase, blocking conversion of squalene to lanosterol, leading to squaline accumulation and ergosterol depletion in the cell membrane.""" ;
                                                 rdfs:comment "These agents are highly selective for the fungal enzyme and have a minimal effect on mammalian cholesterol synthesis." ;
