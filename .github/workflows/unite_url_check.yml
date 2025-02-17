@@ -28,7 +28,7 @@ jobs:
         python unite_url_check.py
 
     - name: Upload Warning Log
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: warning-log
         path: failed_links.txt 
