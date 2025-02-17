@@ -1343,7 +1343,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000560"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/0190-9622(90)70288-s</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.merckvetmanual.com/pharmacology/antifungal-agents/allylamines</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.merckvetmanual.com/pharmacology/antifungal-agents/allylamines-for-use-in-animals</obo:IAO_0000119>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allylamines are a group of antifungals that inhibit ergosterol synthesis at the level of squalene epoxidase. 
 Their mechanism is competitive inhibition of squalene epoxidase, blocking conversion of squalene to lanosterol, leading to squaline accumulation and ergosterol depletion in the cell membrane.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These agents are highly selective for the fungal enzyme and have a minimal effect on mammalian cholesterol synthesis.</rdfs:comment>
@@ -2048,7 +2048,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000005"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">World Health Organization: https://www.who.int/india/emergencies/coronavirus-disease-(covid-19)/mucormycosis</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">World Health Organization: https://www.who.int/india/home/emergencies/coronavirus-disease-(covid-19)/mucormycosis</obo:IAO_0000119>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mucormycosis is a fungal infectious disease that is caused by a group of fungi called mucormycetes(previously called zygomycosis). It is a rare but serious angio-invasive infection. Clinical presentation is classified according to the organ involvement. It can be rhino-orbital cerebral, pulmonary, cutaneous, gastrointestinal, or disseminated.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygomycosis (previous name)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">didn&apos;t import EFO:0007380, which also refers to mucormycosis, since that defintion mentions Zygomycota, a phylum of fungi that no longer exists</rdfs:comment>
@@ -2141,7 +2141,7 @@ Pulmonary sporotrichosis occurs following inhalation of fungus and manifests as 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000040"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/mucormycosis/hcp/clinical-overview/index.html</obo:IAO_0000119>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis that is in the sinuses and that can spread to the brain. This is most common in people with uncontrolled diabetes and in people who have had a kidney transplant.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinus and brain mucormycosis</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">rhinocerebral mucormycosis</rdfs:label>
@@ -2257,7 +2257,7 @@ More info: doi: 10.21037/jtd.2017.02.31</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/MIDO_0000040"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney Cohen</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/fungal/diseases/mucormycosis/definition.html</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.cdc.gov/mucormycosis/hcp/clinical-overview/index.html</obo:IAO_0000119>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mucormycosis that spreads through the bloodstream to affect another part of the body. Disseminated mucormycosis most commonly affects the brain, but also can affect other organs such as the spleen, heart, and skin.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">disseminated mucormycosis</rdfs:label>
     </owl:Class>
